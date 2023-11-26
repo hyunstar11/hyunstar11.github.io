@@ -1,6 +1,3 @@
-//# Andrew (Kyu Hyun) Leem's Portfolio 
-//Andrew's Portfolio 
-
 ---
 layout: default
 ---
