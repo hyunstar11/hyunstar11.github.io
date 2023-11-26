@@ -1,4 +1,4 @@
-# Github Page 
+# Aspiring Master's Candidate in Data Science
 
 ---
 layout: default
