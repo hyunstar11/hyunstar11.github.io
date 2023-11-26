@@ -25,12 +25,16 @@
 <div id="banner">
     <span id="logo"></span>
 
-    <!-- New container for buttons using Flexbox -->
+    <!-- Button container with Flexbox -->
     <div class="button-container">
+        <!-- Home button -->
+        <a href="{{ site.baseurl }}/" class="button"><strong>Home</strong></a>
+        <!-- Project buttons -->
+        <a href="{{ site.baseurl }}/project-1/" class="button"><strong>Project 1</strong></a>
+        <a href="{{ site.baseurl }}/project-2/" class="button"><strong>Project 2</strong></a>
+        <a href="{{ site.baseurl }}/project-3/" class="button"><strong>Project 3</strong></a>
+        <!-- View on GitHub button -->
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
-        <a href="url-for-project-1" class="button"><strong>Project 1</strong></a>
-        <a href="url-for-project-2" class="button"><strong>Project 2</strong></a>
-        <a href="url-for-project-3" class="button"><strong>Project 3</strong></a>
     </div>
 
     {% if site.show_downloads %}
