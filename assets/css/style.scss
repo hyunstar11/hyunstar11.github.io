@@ -3,101 +3,92 @@
 
 @import 'jekyll-theme-leap-day';
 
-/* High specificity selectors for the button container */
+/* Existing styles for the button container */
 div#banner .button-container {
   display: flex;
-  justify-content: flex-end; /* Aligns items to the end of the container */
+  justify-content: flex-end;
   align-items: center;
-  gap: 10px; /* Adjust the space between the buttons as necessary */
-  padding-right: 100px; /* Adjust until it aligns with the content below */
+  gap: 10px;
+  padding-right: 100px;
 }
 
-/* Specificity for the buttons */
+/* Existing button styles */
 div#banner .button-container a.button, 
 div#banner .button-container a.button.fork {
   text-decoration: none;
-  padding: 8px 15px; /* Adjust padding as needed */
-  margin: 0 5px; /* Horizontal margin for non-overlapping */
-  background: #f0f0f0; /* Example background color, change as necessary */
-  color: #333; /* Example text color, change as necessary */
-  border-radius: 4px; /* Rounded corners for buttons */
-  border: 1px solid #ccc; /* Example border, change as necessary */
+  padding: 8px 15px;
+  margin: 0 5px;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 4px;
+  border: 1px solid #ccc;
   text-align: center;
-  white-space: nowrap; /* Prevent text from wrapping to a new line */
-  overflow: hidden; /* Keep content within the button */
-  text-overflow: ellipsis; /* Add an ellipsis if text is too long */
-  display: inline-block; /* Display as inline-block for proper spacing */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 
-/* Media query for responsive design */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
   div#banner .button-container {
-    justify-content: center; /* Center buttons for mobile view */
-    flex-direction: column; /* Stack buttons on smaller screens */
+    justify-content: center;
+    flex-direction: column;
   }
 
   div#banner .button-container a.button, 
   div#banner .button-container a.button.fork {
-    width: auto; /* Auto width for buttons */
-    margin-bottom: 10px; /* Margin bottom for stacked buttons */
+    width: auto;
+    margin-bottom: 10px;
   }
 }
 
-/* Content Area Styles for Readability */
+/* Readability styles for content */
 .content, .wrapper {
-  font-family: 'Open Sans', sans-serif; /* Example font, choose a web-safe or imported font */
-  color: #333; /* Dark grey color for text */
-  line-height: 1.6; /* Spacious line-height for improved readability */
-  max-width: 960px; /* Adjust content width as needed */
-  margin: 0 auto; /* Center the content within the page */
-  padding: 20px; /* Add padding around the content */
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Adjusting heading styles for clear hierarchy */
+/* Heading styles for hierarchy */
 h1, h2, h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* Paragraph styles for better legibility */
+/* Paragraph styles for legibility */
 p {
   margin-bottom: 10px;
 }
 
-/* Contact Buttons Styles */
+/* New styles for contact buttons */
 .contact-buttons {
   display: flex;
-  justify-content: flex-end; /* Align the buttons to the right */
-  margin-right: 20px; /* Adjust as needed */
-  gap: 10px; /* Space between buttons */
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 20px;
 }
 
 .contact-buttons .button {
   text-decoration: none;
-  padding: 8px 15px;
-  color: #fff; /* White text */
-  background-color: #0077B5; /* LinkedIn blue */
+  padding: 8px 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  color: #ffffff;
   border-radius: 4px;
-  border: none;
-  text-align: center;
-  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
-.contact-buttons .button.email {
-  background-color: #D44638; /* Email button color */
-}
+/* Specific button colors */
+.contact-buttons .button.email { background-color: #D44638; }
+.contact-buttons .button.cv { background-color: #4A4A4A; }
+.contact-buttons .button.linkedin { background-color: #0e76a8; }
 
-.contact-buttons .button.cv {
-  background-color: #4A4A4A; /* CV button color */
+/* Hover effect for buttons */
+.contact-buttons .button:hover {
+  background-color: darken($button-background-color, 10%);
 }
-
-.contact-buttons .button.linkedin {
-  background-color: #0e76a8; /* LinkedIn button color */
-}
-
-/* Update button container background to match yellow */
-div#banner .button-container a.button {
-  background: #FFD700; /* Yellow background to match the banner */
-  border: none; /* Remove border to blend with the background */
-}
-
