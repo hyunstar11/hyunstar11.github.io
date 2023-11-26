@@ -1,5 +1,6 @@
 title: Andrew(Kyu Hyun) Leem 
 description: Welcome to my portfolio page  
-show_downloads: false
+show_downloads: true
 theme: jekyll-theme-leap-day
-
+include:
+  - _pages
