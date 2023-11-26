@@ -6,11 +6,10 @@
 /* High specificity selectors for the button container */
 div#banner .button-container {
   display: flex;
-  justify-content: flex-start; /* Align buttons to the start of the container */
+  justify-content: center; /* Center buttons horizontally */
   align-items: center; /* Align buttons vertically */
   flex-wrap: wrap; /* Allow the buttons to wrap onto the next line as needed */
   gap: 10px; /* Space between buttons */
-  margin-left: 2.5cm; /* Move all tabs to the right */
 }
 
 /* Specificity for the buttons */
@@ -35,7 +34,6 @@ div#banner .button-container a.button.fork {
   div#banner .button-container {
     justify-content: space-around; /* Evenly space buttons with some space around */
     flex-direction: column; /* Stack buttons on smaller screens */
-    margin-left: 0; /* Remove the left margin on smaller screens */
   }
 
   div#banner .button-container a.button, 
