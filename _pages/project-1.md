@@ -76,5 +76,3 @@ Cleaning the Data:
 ### 2.4. Interpreting Coefficients (PDP Plot)
 
 [needs update] 
-
-# 3. 회고 및 향후 발전방향  
