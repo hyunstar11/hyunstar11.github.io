@@ -61,6 +61,7 @@ Cleaning the Data:
 - Confirming that shoe size has little to do with resale value
 
 ### 2.2. Modeling & Selection 
+<img width="456" alt="스크린샷 2023-11-27 오전 2 35 54" src="https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/ef3464f7-0e7e-41b4-ad02-9abfe0b5c7a2">
 
 ![스크린샷 2023-11-12 오후 11 58 40](https://github.com/hyunstar11/Portfolio/assets/90128775/b74de6d6-297d-4114-8a1f-671854fa879e)
 
