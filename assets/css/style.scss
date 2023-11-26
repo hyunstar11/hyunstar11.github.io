@@ -10,6 +10,7 @@ div#banner .button-container {
   align-items: center; /* Align buttons vertically */
   flex-wrap: wrap; /* Allow the buttons to wrap onto the next line as needed */
   gap: 10px; /* Space between buttons */
+  /* Removed margin-left: auto; to allow centering */
 }
 
 /* Specificity for the buttons */
@@ -32,7 +33,7 @@ div#banner .button-container a.button.fork {
 /* Media query for responsive design */
 @media (max-width: 768px) {
   div#banner .button-container {
-    justify-content: space-around; /* Evenly space buttons with some space around */
+    justify-content: center; /* Center buttons for mobile view */
     flex-direction: column; /* Stack buttons on smaller screens */
   }
 
