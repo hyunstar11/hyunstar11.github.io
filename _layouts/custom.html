@@ -18,7 +18,15 @@
 <header>
     <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
     <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+    
+    <!-- Contact buttons -->
+    <div class="contact-buttons">
+      <a href="mailto:your.email@example.com" class="button email">Email</a>
+      <a href="your-cv-link.pdf" class="button cv" target="_blank">CV</a>
+      <a href="your-linkedin-profile-link" class="button linkedin" target="_blank">LinkedIn</a>
+    </div>
 </header>
+
 
 <div id="banner">
     <span id="logo"></span>
