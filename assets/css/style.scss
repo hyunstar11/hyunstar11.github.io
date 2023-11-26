@@ -6,12 +6,10 @@
 /* High specificity selectors for the button container */
 div#banner .button-container {
   display: flex;
-  justify-content: flex-end; /* Aligns items to the end of the container, which is the right side */
+  justify-content: center; /* Center buttons horizontally */
   align-items: center; /* Align buttons vertically */
   flex-wrap: wrap; /* Allow the buttons to wrap onto the next line as needed */
   gap: 10px; /* Space between buttons */
-  margin-left: auto; /* This will push the button container to the right */
-  padding-right: 2em; /* Adjust this value to fine-tune the position relative to the GitHub logo */
 }
 
 /* Specificity for the buttons */
