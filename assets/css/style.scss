@@ -9,9 +9,8 @@ div#banner .button-container {
   justify-content: flex-end; /* Aligns items to the end of the container */
   align-items: center;
   gap: 10px; /* Adjust the space between the buttons as necessary */
-  padding-right: 100px; /* Adjust X until it aligns with the content below */
+  padding-right: 100px; /* Adjust until it aligns with the content below */
 }
-
 
 /* Specificity for the buttons */
 div#banner .button-container a.button, 
@@ -42,4 +41,25 @@ div#banner .button-container a.button.fork {
     width: auto; /* Auto width for buttons */
     margin-bottom: 10px; /* Margin bottom for stacked buttons */
   }
+}
+
+/* Content Area Styles for Readability */
+.content {
+  font-family: 'Open Sans', sans-serif; /* Example font, choose a web-safe or imported font */
+  color: #333; /* Dark grey color for text */
+  line-height: 1.6; /* Spacious line-height for improved readability */
+  max-width: 800px; /* Adjust content width as needed */
+  margin: 0 auto; /* Center the content within the page */
+  padding: 20px; /* Add padding around the content */
+}
+
+/* Adjusting heading styles for clear hierarchy */
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles for better legibility */
+p {
+  margin-bottom: 10px;
 }
