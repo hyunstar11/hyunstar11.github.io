@@ -3,6 +3,32 @@
 
 @import 'jekyll-theme-slate';
 
+/* Override theme colors for content */
+.content, .wrapper {
+  background-color: #ffffff; /* Light background for content */
+  color: #333333; /* Dark text for readability */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  max-width: 960px; /* Adjust the max width to your preference */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ensure headings are visible */
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* Dark color for headings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style links to be visible */
+a {
+  color: #0066cc; /* Blue color for links */
+  &:hover {
+    color: #004499; /* Darker blue on hover */
+  }
+}
+
 /* Existing styles for the button container */
 div#banner .button-container {
   display: flex;
@@ -12,14 +38,14 @@ div#banner .button-container {
   padding-right: 100px;
 }
 
-/* Existing button styles */
+/* Existing styles for buttons */
 div#banner .button-container a.button, 
 div#banner .button-container a.button.fork {
   text-decoration: none;
   padding: 8px 15px;
   margin: 0 5px;
-  background: #f0f0f0;
-  color: #333;
+  background: #f0f0f0; /* Light background for buttons */
+  color: #333; /* Dark text for buttons */
   border-radius: 4px;
   border: 1px solid #ccc;
   text-align: center;
@@ -43,43 +69,18 @@ div#banner .button-container a.button.fork {
   }
 }
 
-/* Readability styles for content */
-.content, .wrapper {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Heading styles for hierarchy */
-h1, h2, h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* Paragraph styles for legibility */
-p {
-  margin-bottom: 10px;
-}
-
-/* New styles for contact buttons */
+/* Styles for contact buttons */
 .contact-buttons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
   margin-right: 20px;
-  /* margin-top: 20px; /* Adjust this value as needed to align with the blue edge */
-  /* position: relative; /* Add this if not already positioned */
-  /* top: -20px; /* Adjust this value to bring the buttons down */
 }
 
 .contact-buttons .button {
   text-decoration: none;
   padding: 8px 12px;
-  font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
   color: #ffffff;
   border-radius: 4px;
@@ -92,7 +93,6 @@ p {
 .contact-buttons .button.linkedin { background-color: #0e76a8; }
 
 /* Hover effect for buttons */
-.contact-buttons .button.email:hover { background-color: #C13B33; } /* Darker shade of the email button color */
-.contact-buttons .button.cv:hover { background-color: #393939; } /* Darker shade of the CV button color */
-.contact-buttons .button.linkedin:hover { background-color: #0a5a86; } /* Darker shade of the LinkedIn button color */
-
+.contact-buttons .button.email:hover { background-color: #C13B33; }
+.contact-buttons .button.cv:hover { background-color: #393939; }
+.contact-buttons .button.linkedin:hover { background-color: #0a5a86; }
