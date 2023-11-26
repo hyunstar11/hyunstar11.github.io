@@ -1,34 +1,48 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-    <!-- ... other head elements ... -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    {% include head-custom.html %}
 </head>
 <body>
 
 <header>
-    <!-- ... header content ... -->
+    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
 </header>
 
 <div id="banner">
     <span id="logo"></span>
-
-    <!-- Button container with Flexbox -->
     <div class="button-container">
-        <!-- Home button -->
         <a href="{{ site.baseurl }}/" class="button"><strong>Home</strong></a>
-        <!-- Project buttons -->
         <a href="{{ site.baseurl }}/project-1/" class="button"><strong>ML - Sneaker Resell Price Prediction</strong></a>
         <a href="{{ site.baseurl }}/project-2/" class="button"><strong>Project 2</strong></a>
         <a href="{{ site.baseurl }}/project-3/" class="button"><strong>Project 3</strong></a>
-        <!-- "View on GitHub" button removed -->
     </div>
-
-    <!-- Downloads section removed -->
-
 </div><!-- end banner -->
 
 <div class="wrapper">
-    <!-- ... main content and footer ... -->
+    <nav>
+        <ul></ul>
+    </nav>
+    <section>
+        {{ content }} <!-- This is where the content of your Markdown files will be injected -->
+    </section>
+    <footer>
+        {% if site.github.is_project_page %}
+        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+    </footer>
 </div>
 
 </body>
