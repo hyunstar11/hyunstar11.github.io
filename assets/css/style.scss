@@ -1,4 +1,26 @@
 ---
+# Only the main Sass file needs front matter (the dashes are necessary)
 ---
 
 @import 'jekyll-theme-leap-day';
+
+/* Add your custom styles below */
+
+.button-container {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Align the buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+.button {
+  text-decoration: none;
+  /* Add more button styling as needed */
+}
+
+/* You might also want to add styles for when the screen size is small (responsive design) */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}
