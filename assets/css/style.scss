@@ -44,11 +44,11 @@ div#banner .button-container a.button.fork {
 }
 
 /* Content Area Styles for Readability */
-.content {
+.content, .wrapper {
   font-family: 'Open Sans', sans-serif; /* Example font, choose a web-safe or imported font */
   color: #333; /* Dark grey color for text */
   line-height: 1.6; /* Spacious line-height for improved readability */
-  max-width: 800px; /* Adjust content width as needed */
+  max-width: 960px; /* Adjust content width as needed */
   margin: 0 auto; /* Center the content within the page */
   padding: 20px; /* Add padding around the content */
 }
