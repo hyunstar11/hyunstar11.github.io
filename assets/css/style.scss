@@ -6,12 +6,12 @@
 /* High specificity selectors for the button container */
 div#banner .button-container {
   display: flex;
-  justify-content: center; /* Center buttons horizontally */
-  align-items: center; /* Align buttons vertically */
-  flex-wrap: wrap; /* Allow the buttons to wrap onto the next line as needed */
-  gap: 10px; /* Space between buttons */
-  /* Removed margin-left: auto; to allow centering */
+  justify-content: flex-end; /* Aligns items to the end of the container */
+  align-items: center;
+  gap: 10px; /* Adjust the space between the buttons as necessary */
+  /* Additional styles may be needed depending on the rest of your layout */
 }
+
 
 /* Specificity for the buttons */
 div#banner .button-container a.button, 
