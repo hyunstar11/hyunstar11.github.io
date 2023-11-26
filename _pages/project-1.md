@@ -71,8 +71,12 @@ Cleaning the Data:
 
 ### 2.3. Feature Importance 
 
-[needs update] 
+![Feature Importance](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/acd3c069-f267-49bc-9ac6-cc59f2b90be2)
+
 
 ### 2.4. Interpreting Coefficients (PDP Plot)
 
-[needs update] 
+![PDP Plot_Jordan](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/1a6abc97-50a4-4ada-a733-a35cba9c2a1d)
+
+![PDP_ReleaseDate](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/f86ffcb7-8ae3-41ec-a53b-2c6c20bd3dd0)
+
