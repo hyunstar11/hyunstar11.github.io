@@ -89,6 +89,7 @@ p {
 .contact-buttons .button.linkedin { background-color: #0e76a8; }
 
 /* Hover effect for buttons */
-.contact-buttons .button:hover {
-  background-color: darken($button-background-color, 10%);
-}
+.contact-buttons .button.email:hover { background-color: #C13B33; } /* Darker shade of the email button color */
+.contact-buttons .button.cv:hover { background-color: #393939; } /* Darker shade of the CV button color */
+.contact-buttons .button.linkedin:hover { background-color: #0a5a86; } /* Darker shade of the LinkedIn button color */
+
