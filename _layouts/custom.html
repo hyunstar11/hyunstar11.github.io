@@ -1,57 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    {% include head-custom.html %}
+  <!-- head content -->
 </head>
 <body>
 
 <header>
-    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-    
-    <!-- Contact buttons -->
-    <div class="contact-buttons">
-      <a href="mailto:your.email@example.com" class="button email">Email</a>
-      <a href="your-cv-link.pdf" class="button cv" target="_blank">CV</a>
-      <a href="your-linkedin-profile-link" class="button linkedin" target="_blank">LinkedIn</a>
-    </div>
+  <h1>{{ site.title }}</h1>
+  <nav>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/ml-sneaker-resell/' | relative_url }}">ML - Sneaker Resell Price Prediction</a></li>
+      <li><a href="{{ '/dl-bitcoin-price/' | relative_url }}">DL - Bitcoin Price Direction Prediction</a></li>
+      <li><a href="{{ '/dl-bitcoin-sentiment/' | relative_url }}">DL - Bitcoin Sentiment Analysis</a></li>
+    </ul>
+  </nav>
 </header>
 
-
-<div id="banner">
-    <span id="logo"></span>
-    <div class="button-container">
-        <a href="{{ site.baseurl }}/" class="button"><strong>Home</strong></a>
-        <a href="{{ site.baseurl }}/project-1/" class="button"><strong>ML - Sneaker Resell Price Prediction</strong></a>
-        <a href="{{ site.baseurl }}/project-2/" class="button"><strong>DL - Bitcoin Price Direction Prediction</strong></a>
-        <a href="{{ site.baseurl }}/project-3/" class="button"><strong>DL - Bitcoin Sentiment Analysis</strong></a>
-    </div>
-</div><!-- end banner -->
-
-<div class="wrapper">
-    <nav>
-        <ul></ul>
-    </nav>
-    <section>
-        {{ content }} <!-- This is where the content of your Markdown files will be injected -->
-    </section>
-    <footer>
-        {% if site.github.is_project_page %}
-        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-    </footer>
+<div class="page-content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
 </div>
+
+<footer>
+  <div class="contact-buttons">
+    <a href="mailto:{{ site.email }}" class="button email">Email</a>
+    <a href="{{ site.cv }}" class="button cv">CV</a>
+    <a href="{{ site.linkedin }}" class="button linkedin">LinkedIn</a>
+  </div>
+</footer>
 
 </body>
 </html>
