@@ -1,3 +1,5 @@
 title: Andrew(Kyu Hyun) Leem
 description: Welcome to my portfolio page
 theme: jekyll-theme-slate
+include:
+  - _pages
