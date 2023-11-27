@@ -4,4 +4,55 @@
 
 @import "{{ site.theme }}";
 
-// Add your custom styles here
+/* Add your custom styles here */
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigation-buttons .button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.navigation-buttons .button:hover {
+    background-color: #e0e0e0;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-buttons .button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.contact-buttons .button.email {
+    background-color: #d44638;
+}
+
+.contact-buttons .button.cv {
+    background-color: #4a4a4a;
+}
+
+.contact-buttons .button.linkedin {
+    background-color: #0e76a8;
+}
+
+.contact-buttons .button:hover {
+    opacity: 0.9;
+}
