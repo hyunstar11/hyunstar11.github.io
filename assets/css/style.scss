@@ -96,3 +96,31 @@ div#banner .button-container a.button.fork {
 .contact-buttons .button.email:hover { background-color: #C13B33; }
 .contact-buttons .button.cv:hover { background-color: #393939; }
 .contact-buttons .button.linkedin:hover { background-color: #0a5a86; }
+
+/* Custom styles for portfolio name and navigation alignment */
+
+/* Change portfolio name font color to white */
+.portfolio-name {
+  color: #ffffff; /* or use 'color: white;' */
+}
+
+/* Align navigation buttons with contact buttons */
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* or 'center' depending on exact desired alignment */
+  gap: 10px;
+  margin-right: 20px; /* Adjust as necessary for alignment */
+}
+
+/* Style individual navigation buttons if needed */
+.navigation-buttons .button {
+  /* Your specific styles for navigation buttons */
+}
+
+/* You may need to add media queries for responsive design adjustments */
+@media (max-width: 768px) {
+  .navigation-buttons {
+    /* Adjustments for smaller screens */
+  }
+}
