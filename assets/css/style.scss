@@ -1,126 +1,35 @@
 ---
 ---
 
-@import 'jekyll-theme-slate';
+@import "jekyll-theme-slate";
 
-/* Override theme colors for content */
-.content, .wrapper {
-  background-color: #ffffff; /* Light background for content */
-  color: #333333; /* Dark text for readability */
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  max-width: 960px; /* Adjust the max width to your preference */
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Ensure headings are visible */
-h1, h2, h3, h4, h5, h6 {
-  color: #333333; /* Dark color for headings */
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* Style links to be visible */
-a {
-  color: #0066cc; /* Blue color for links */
-  &:hover {
-    color: #004499; /* Darker blue on hover */
-  }
-}
-
-/* Existing styles for the button container */
-div#banner .button-container {
+/* Your custom styles below */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  padding-right: 100px;
 }
 
-/* Existing styles for buttons */
-div#banner .button-container a.button, 
-div#banner .button-container a.button.fork {
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
   text-decoration: none;
-  padding: 8px 15px;
-  margin: 0 5px;
-  background: #f0f0f0; /* Light background for buttons */
-  color: #333; /* Dark text for buttons */
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-block;
+  color: #fff; /* Adjust the color to fit the theme */
 }
 
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-  div#banner .button-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  div#banner .button-container a.button, 
-  div#banner .button-container a.button.fork {
-    width: auto;
-    margin-bottom: 10px;
-  }
-}
-
-/* Styles for contact buttons */
-.contact-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-right: 20px;
-}
-
-.contact-buttons .button {
-  text-decoration: none;
+.contact-buttons a.button {
   padding: 8px 12px;
-  font-size: 0.9em;
-  color: #ffffff;
+  background-color: #333; /* Dark background for contrast */
+  color: #fff; /* White text for visibility */
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-/* Specific button colors */
-.contact-buttons .button.email { background-color: #D44638; }
-.contact-buttons .button.cv { background-color: #4A4A4A; }
-.contact-buttons .button.linkedin { background-color: #0e76a8; }
-
-/* Hover effect for buttons */
-.contact-buttons .button.email:hover { background-color: #C13B33; }
-.contact-buttons .button.cv:hover { background-color: #393939; }
-.contact-buttons .button.linkedin:hover { background-color: #0a5a86; }
-
-/* Custom styles for portfolio name and navigation alignment */
-
-/* Change portfolio name font color to white */
-.portfolio-name {
-  color: #ffffff !important;
+.contact-buttons a.button:hover {
+  background-color: darken(#333, 10%);
 }
 
-/* Align navigation buttons with contact buttons */
-.navigation-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* or 'center' depending on exact desired alignment */
-  gap: 10px;
-  margin-right: 20px; /* Adjust as necessary for alignment */
-}
-
-/* Style individual navigation buttons if needed */
-.navigation-buttons .button {
-  /* Your specific styles for navigation buttons */
-}
-
-/* You may need to add media queries for responsive design adjustments */
-@media (max-width: 768px) {
-  .navigation-buttons {
-    /* Adjustments for smaller screens */
-  }
-}
+/* Other styles... */
