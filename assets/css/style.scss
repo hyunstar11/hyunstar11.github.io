@@ -1,49 +1,32 @@
-// Custom styles for navigation and contact buttons
-
-/* Align the navigation buttons to the center */
-.navigation-buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+/* Header inner should use flexbox to organize children vertically */
+#header_wrap .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center children horizontally
 }
 
-/* Style for individual navigation buttons */
-.navigation-buttons .button {
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #f0f0f0;
-  color: #333;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease; // smooth transition for hover effect
-}
-
-/* Hover effect for navigation buttons */
-.navigation-buttons .button:hover {
-  background-color: #e0e0e0;
-}
-
-/* Position the contact buttons to the far right */
+/* Contact buttons should be grouped separately and aligned */
 .contact-buttons {
-  display: flex;
-  justify-content: flex-end; // aligns items to the end (right side)
-  position: absolute; // position absolute to place them relative to the parent
-  right: 0; // align to the right edge
-  top: 50%; // align vertically to the center of the parent
-  transform: translateY(-50%); // this ensures the buttons are centered vertically
-  margin-right: 20px; // right margin for spacing from the edge
+    display: flex;
+    justify-content: center; // Center buttons horizontally
+    margin-bottom: 10px; // Space between contact and navigation buttons
+    // ... other styles ...
 }
 
-/* Style for individual contact buttons */
-.contact-buttons .button {
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  color: #fff;
-  border-radius: 3px;
-  font-weight: bold;
-  transition: opacity 0.3s ease; // smooth transition for hover effect
+/* Navigation buttons should be grouped separately and aligned */
+.navigation-buttons {
+    display: flex;
+    justify-content: center; // Center buttons horizontally
+    // ... other styles ...
+}
+
+/* Button styling remains the same */
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    // ... other styles ...
+    // Add specific styles for contact buttons if needed
 }
 
 /* Specific styles for each contact button based on its class */
@@ -51,5 +34,8 @@
 .contact-buttons .button.cv { background-color: #4a4a4a; }
 .contact-buttons .button.linkedin { background-color: #0e76a8; }
 
-/* Hover effect to reduce opacity for contact buttons */
-.contact-buttons .button:hover { opacity: 0.9; }
+/* Hover effects */
+.contact-buttons .button:hover,
+.navigation-buttons .button:hover {
+    opacity: 0.9;
+}
