@@ -1,41 +1,43 @@
-/* Header inner should use flexbox to organize children vertically */
+/* Main Styles for the Page */
 #header_wrap .inner {
     display: flex;
     flex-direction: column;
-    align-items: center; // Center children horizontally
+    align-items: center;
 }
 
-/* Contact buttons should be grouped separately and aligned */
+/* Contact Buttons */
 .contact-buttons {
     display: flex;
-    justify-content: center; // Center buttons horizontally
-    margin-bottom: 10px; // Space between contact and navigation buttons
-    // ... other styles ...
+    justify-content: center;
+    margin-bottom: 10px;
+    /* Styles for individual buttons */
 }
 
-/* Navigation buttons should be grouped separately and aligned */
+.contact-buttons .button {
+    /* Style for email, CV, LinkedIn buttons */
+}
+
+/* Navigation Buttons */
 .navigation-buttons {
     display: flex;
-    justify-content: center; // Center buttons horizontally
-    // ... other styles ...
+    justify-content: center;
+    /* Styles for individual buttons */
 }
 
-/* Button styling remains the same */
+.navigation-buttons .button {
+    /* Style for Home, ML, Project 2, Project 3 buttons */
+}
+
+/* Shared Button Styles */
 .button {
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    // ... other styles ...
-    // Add specific styles for contact buttons if needed
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
 
-/* Specific styles for each contact button based on its class */
-.contact-buttons .button.email { background-color: #d44638; }
-.contact-buttons .button.cv { background-color: #4a4a4a; }
-.contact-buttons .button.linkedin { background-color: #0e76a8; }
-
-/* Hover effects */
-.contact-buttons .button:hover,
-.navigation-buttons .button:hover {
+/* Hover Effects */
+.button:hover {
     opacity: 0.9;
 }
