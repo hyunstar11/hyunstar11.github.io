@@ -1,3 +1,9 @@
+---
+# Only the main SCSS file needs front matter (the dashes are enough)
+---
+
+@import "main";
+
 /* Main Styles for the Page */
 #header_wrap .inner {
     display: flex;
