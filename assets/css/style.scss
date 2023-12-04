@@ -1,58 +1,55 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+// Custom styles for navigation and contact buttons
 
-@import "{{ site.theme }}";
-
-/* Add your custom styles here */
-
+/* Align the navigation buttons to the center */
 .navigation-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
+/* Style for individual navigation buttons */
 .navigation-buttons .button {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #f0f0f0;
-    color: #333;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease; // smooth transition for hover effect
 }
 
+/* Hover effect for navigation buttons */
 .navigation-buttons .button:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
+/* Position the contact buttons to the far right */
 .contact-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; // aligns items to the end (right side)
+  position: absolute; // position absolute to place them relative to the parent
+  right: 0; // align to the right edge
+  top: 50%; // align vertically to the center of the parent
+  transform: translateY(-50%); // this ensures the buttons are centered vertically
+  margin-right: 20px; // right margin for spacing from the edge
 }
 
+/* Style for individual contact buttons */
 .contact-buttons .button {
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    color: #fff;
-    border-radius: 3px;
-    font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: opacity 0.3s ease; // smooth transition for hover effect
 }
 
-.contact-buttons .button.email {
-    background-color: #d44638;
-}
+/* Specific styles for each contact button based on its class */
+.contact-buttons .button.email { background-color: #d44638; }
+.contact-buttons .button.cv { background-color: #4a4a4a; }
+.contact-buttons .button.linkedin { background-color: #0e76a8; }
 
-.contact-buttons .button.cv {
-    background-color: #4a4a4a;
-}
-
-.contact-buttons .button.linkedin {
-    background-color: #0e76a8;
-}
-
-.contact-buttons .button:hover {
-    opacity: 0.9;
-}
+/* Hover effect to reduce opacity for contact buttons */
+.contact-buttons .button:hover { opacity: 0.9; }
