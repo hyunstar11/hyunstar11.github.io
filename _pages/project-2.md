@@ -20,10 +20,10 @@ permalink: /project-2/
 
 # 1. Introduction 
 ### 1.1. Problem Statement
-- Purpose: To create a deep learning model that predicts the price direction of bitcoin, which is like an index in the cryptocurrency market (up or down). 
+- Purpose: To create a model that predicts the price direction (up or down) of bitcoin, which is an index in the cryptocurrency market
   - Stock price/bitcoin prediction models commonly found on the internet are prone to summation of processes 
     - Why?: Because they use non-stationary data instead of stationary data 
-  - Problem : Can we create a model that helps us with trading/investment decisions based on data (price) to minimize FOMO? 
+  - Problem : Can we create a model that helps us with trading/investment decisions based on data (price) to minimize FOMO and make data-driven decisions? 
 
 ### 1.2. Description of the dataset 
 - I used Alpha Vantage's API to get daily Bitcoin price data (Open, Low, Close, Volume) 
@@ -37,7 +37,7 @@ permalink: /project-2/
   - Why Stationary data? - Data with constant mean, covariance -> better for creating predictive models
 
 
-- Time Period: January 2021 to April 2022, a period when I was actively engaged in this project.
+- Time Period: January 2021 (right when the crypto market started gaining a worldwide attention) to April 2022, a period when I was actively engaged in this project.
   - Rationale for Time Period Selection: This timeframe witnessed significant institutional investment in Bitcoin, exemplified by major purchases from entities such as Tesla, Fidelity Investments, and Nexon. The influx of institutional investors during this period likely influenced market behavior, making it an ideal subject for analysis.
 - Preprocessing of Closing Prices for Binary Classification Models: For simplification, the closing prices were processed into a binary format, where a positive close is represented as 1 and a negative close as 0. This binary representation is aimed at facilitating the classification task in the predictive models.
 - Converting Data from Non-Stationary to Stationary: I transformed the data to a stationary format by calculating the difference between the current day’s price and the previous day’s price.
