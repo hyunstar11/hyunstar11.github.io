@@ -1,3 +1,9 @@
+---
+layout: custom
+title: DL - Bitcoin Price Direction Prediction Model 
+permalink: /project-3/
+---
+
 # Table of Contents 
 
 #### 1. Introduction
