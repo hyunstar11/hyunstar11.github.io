@@ -69,7 +69,7 @@ permalink: /project-3/
 - #### 2nd Case 
   - Used the dataset labeled with meat types 0-5 (deduplication O, amplification X, sampling 10k out of 50k)
   - Results were not significantly different with amplification (to address class imbalance)  
-  - As of Epoch 4, **`train acc.`** = 0.999, **`test acc.`** = 0.998 
+  - As of Epoch 4, **`train acc.`** = 0.999, **`test acc.`** = 0.998 <- possible overfitting? 
   - Declared the **`Predict()`** function 
     - Menu input to the model -> Output labeling results 
   - Compared the results with 'Nuvi_Foods' data via **`Predict()`** function (labeling completed for 595/1855 meats)
@@ -80,9 +80,9 @@ permalink: /project-3/
     - Performance comparison 
       - Pig: 50% classification compared to Nuvi_Foods 
       - Cows: 80% classification
-      - Chicken: 100
-      - Duck: 80
-      - Fish: 60 
+      - Chicken: 100%
+      - Duck: 80%
+      - Fish: 60%
     - Result of using the function 
   
 ![Screenshot 2022-08-03 1 16 19 PM](https://user-images.githubusercontent.com/90128775/182523089-07a1f4d2-3994-4a4a-8856-195d4f69ea47.png)
