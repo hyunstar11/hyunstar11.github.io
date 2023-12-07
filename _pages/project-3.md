@@ -24,30 +24,30 @@ permalink: /project-3/
 - Nubilab, a Korean food-tech startup, wanted to develop a diet recommendation system in addition to its current school lunch platform and provide it to nutritionists. 
 - The goal was to provide insights into food trends by including foods that have recently appeared in school lunches in the recommendation system.  
 - To do this, I wanted to develop a model that labels new menu items according to the different criteria. 
-- In this project, I classified the 'meat' category, which is one of the important criteria for diet recommendation (classifying which meat is included in the menu).   
+- For this project, I classified the 'meat' category, which is one of the important criteria for diet recommendation (classifying which meat is included in the menu).   
 
 ### Description of the dataset 
 
-- Public data provided by the Nice Education Information Portal (school lunch data from the Seoul Metropolitan Office of Education)  
-- Extract high school diet food names, remove duplicates
+- Public data provided by the NICE Education Information Portal (school lunch data from the Seoul Metropolitan Office of Education)  
+- Extracted the food names from the lunch menus, removed the duplicates
 
 -링크: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
 
 ### 2. Project Progress 
 ### 2.1. EDA 
 
-- Remove duplicate menus (660,000 -> 5.5K) 
+- Removed duplicate menus (660,000 -> 5.5K) 
   - Use the final 5.5K data 
 
 <img width="906" alt="Screenshot 2022-07-13 11:36 09 pm" src="https://user-images.githubusercontent.com/90128775/178760402-e4c9a82e-a128-4fe7-a5e4-83dcf2792653.png">
 
-- Go through the menus in the NEIS food data and create a Word List for each meat category (proceed with hand labeling) 
-  - Word List: Organize a word list for each meat type 
-    - Identify key words for each category after identifying menus in the diets 
+- Went through the menus in the NEIS food data and created a Word List for each meat category (proceed with hand labeling) 
+  - Word List: Organizeed a word list for each meat type 
+    - Identified the keywords for each category after going through the menus in the diets 
 
 ### 2.2. Modeling 
 - #### KoBERT 
-  - Hypothesis: I expect to be able to categorize new food names.
+  - Hypothesis: Categorize new food names with the KoBERT model 
   - Features
     - Follows the BERT structure
     - Predicts the next sentence word given the previous sentence/word 
@@ -55,10 +55,11 @@ permalink: /project-3/
   - Advantages: Korean-specific pre-learning model
   - Classification criteria: 5 types of meat classification (based on Nubi Lab's internal criteria)
 
-### 2.3.Modeling process and results (1st case, 2nd case, KoBERT model training and results) 
-- To check the model performance after deriving the results, compare the accuracy with the dataset (1855 lunch menus) that Nubi Lab has already classified. 
+### 2.3. Modeling process and results (1st case, 2nd case, KoBERT model training and results) 
+- To check the model performance, I compared each model's accuracy with the dataset (1855 lunch menus) that Nubilab has already classified. 
+
 - #### 1st Case 
-  - Proceed with data labeled with meat types 1~5 (except for label 0, which is the case of no meat)
+  - Used the dataset labeled with meat types 1~5 (except for label 0, which is the case of no meat)
   - Label 0 is a non-meat category  
   - Total number of data ~ 10,000
   - **`Results`**: Returns meat type when menu name is entered 
@@ -66,16 +67,16 @@ permalink: /project-3/
   - Based on Epoch 5 **`train acc.`** = 0.999, **`test acc.`** = 0.998 
 
 - #### 2nd Case 
-  - Data labeled with meat types 0-5 (deduplication O, amplification X, sampling 10k out of 50k)
+  - Used the dataset labeled with meat types 0-5 (deduplication O, amplification X, sampling 10k out of 50k)
   - Results were not significantly different with amplification (to address class imbalance)  
   - As of Epoch 4, **`train acc.`** = 0.999, **`test acc.`** = 0.998 
-  - Declare the **`Predict()`** function 
+  - Declared the **`Predict()`** function 
     - Menu input to the model -> Output labeling results 
-  - Compare results with 'Nuvi_Foods' data via **`Predict()`** function (labeling completed for 595/1855 meats)
+  - Compared the results with 'Nuvi_Foods' data via **`Predict()`** function (labeling completed for 595/1855 meats)
     - 'Nuvi_Foods' data is a dataset of 1855 datasets that Nubi Labs has already categorized before the collaboration.
     - Words already in the word list are labeled 
-    - Words not in the list → labeled as 0 (not categorized) 
-    - Not as good as the 'correct' Nouveau Foods data 
+    - Words not in the list were labeled as 0 (not categorized) 
+    - Not as good as the 'correct' (considered as correct) Nuvi Foods data  
     - Performance comparison 
       - Pig: 50% classification compared to Nuvi_Foods 
       - Cows: 80% classification
