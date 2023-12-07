@@ -4,7 +4,7 @@ title: DL - Bitcoin Price Direction Prediction Model
 permalink: /project-3/
 ---
 
-# Table of Contents 
+# Project Outline 
 
 #### 1. Introduction
 - 1.1. Why the topic?  
