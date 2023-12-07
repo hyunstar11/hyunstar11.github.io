@@ -6,7 +6,7 @@ permalink: /project-2/
 
 # Bitcoin Price Directional Prediction Model (2022.03.17-22)
 
-# Project Table of Contents 
+# Project Outline 
 
 #### 1. Introduction
  - 1.1. Problem Statement
