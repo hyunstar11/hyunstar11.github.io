@@ -1,3 +1,4 @@
+---
 layout: custom
 title: Nuvilabs Food Classification Model 
 permalink: /project-3/
