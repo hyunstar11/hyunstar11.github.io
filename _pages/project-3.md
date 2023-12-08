@@ -1,8 +1,9 @@
----
+![image](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/780c994b-6d14-4698-bde9-b6341fc19bfd)---
 layout: custom
-title: DL - Bitcoin Price Direction Prediction Model 
+title: Nuvilabs Food Classification Model 
 permalink: /project-3/
 ---
+# Nuvilabs Food Classification Model 
 
 # Project Outline 
 
