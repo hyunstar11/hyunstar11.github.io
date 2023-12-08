@@ -1,6 +1,6 @@
 ---
 layout: custom
-title: Project 1 - Sneaker Resell Price Prediction Model
+title: Sneaker Resell Price Prediction Model
 permalink: /project-1/
 ---
 
