@@ -28,18 +28,14 @@ permalink: /project-2/
 ### 1.2. Description of the dataset 
 - I used Alpha Vantage's API to get daily Bitcoin price data (Open, Low, Close, Volume) 
 
-# 2. Project Progress 
+# 2. Project Steps 
 ### 2.1. Data EDA & Preprocessing 
-- Time period: Set data from January 2021 to April 2022, when I was working on the project. 
+- Time period: Data from January 2021 to April 2022, when I was working on the project. 
   - Rationale for the Time period selection: Significant institutional buying of Bitcoin starting in 2021 (e.g. Tesla, Fidelity Investments, Nexon, etc.) 
 - Preprocessed closing prices for binary classification models: changed to 1 for positive closes and 0 for negative closes   
 - Converting data from non-stationary to stationary (today's price - previous day's price) 
   - Why Stationary data? - Data with constant mean, covariance -> better for creating predictive models
-
-
-- Time Period: January 2021 (right when the crypto market started gaining a worldwide attention) to April 2022, a period when I was actively engaged in this project.
-  - Rationale for Time Period Selection: This timeframe witnessed significant institutional investment in Bitcoin, exemplified by major purchases from entities such as Tesla, Fidelity Investments, and Nexon. The influx of institutional investors during this period likely influenced market behavior, making it an ideal subject for analysis.
-- Preprocessing of Closing Prices for Binary Classification Models: For simplification, the closing prices were processed into a binary format, where a positive close is represented as 1 and a negative close as 0. This binary representation is aimed at facilitating the classification task in the predictive models.
+- Preprocessing of Closing Prices for Binary Classification Models: For simplicity, closing prices were processed into a binary format, where a **positive** close is represented as 1 and a **negative** close as 0. This binary representation is aimed at facilitating the classification task in the predictive models.
 - Converting Data from Non-Stationary to Stationary: I transformed the data to a stationary format by calculating the difference between the current day’s price and the previous day’s price.
 - Importance of Stationary Data: Stationarity in time series data, characterized by constant statistical properties like mean and covariance, is crucial for the effectiveness of many predictive models. Stationary data tends to be more predictable and its consistency allows for more reliable statistical inference. This is particularly important for models that are based on the assumption of stationarity, such as ARIMA. While not all models require stationary data, converting to a stationary format often simplifies the analysis and helps in avoiding misleading results due to spurious correlations in non-stationary data. However, it’s important to approach this transformation judiciously, as it can sometimes lead to the loss of important information or introduce other complexities.
 
@@ -50,7 +46,7 @@ permalink: /project-2/
   - View several days of data and set a window 
 - Use LSTM by default
   - What is LSTM: Passing on some of the previous data information to the next analysis 
-  - Why: Great for time series data 
+  - Why use it?: Appropriate for time series data 
 
 - 2.2.1. The first model 
   - LSTM model for stationary data 
