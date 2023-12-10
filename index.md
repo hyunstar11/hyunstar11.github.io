@@ -2,8 +2,9 @@
 layout: custom
 ---
 
-- Hello, I'm Andrew Leem (also known as Kyu Hyun), and this is my portfolio page.
-- I am currently in the process of applying for master's programs in data science.
+- Hello, I'm Andrew Leem (also known as Kyu Hyun), and this is my portfolio page
+- I am currently in the process of applying for master's programs in data science
+- I am also in the process of updating this page and my old personal projects 
 - For my Github page, please click [here](https://github.com/hyunstar11)
 
 
