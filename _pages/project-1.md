@@ -6,6 +6,7 @@ permalink: /project-1/
 
 # Sneaker Resell Price Prediction Model (2022.01.07~12) 
 Revised in November 2023
+
 [Click Here for the Code]([URL](https://github.com/hyunstar11/Portfolio/blob/main/ML%26DL/ML/%ED%95%9C%EC%A0%95%ED%8C%90%20%EC%8B%A0%EB%B0%9C%20%EB%A6%AC%EC%85%80%EA%B0%80%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8/Sneaker_ResellPred_Model_Edit.ipynb))
 
 # Project Outline 
