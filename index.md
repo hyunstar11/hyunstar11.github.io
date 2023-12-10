@@ -8,9 +8,9 @@ layout: custom
 
 A little bit about myself:
 
-🎓 Bachelor of Science (B.S.) in Industrial Engineering and Management Sciences from Northwestern University (2018)
+🎓 Bachelor of Science (BS) in Industrial Engineering and Management Sciences from Northwestern University (2018)
 
-🏔 In my free time, I play basketball, lift, and spend time with my family
+🏔 I like to play basketball, lift, and spend time with my family in my free time
 
 💪 Specialties: Python, SQL, R
 
