@@ -33,7 +33,8 @@ permalink: /crypto-prediction-sentiment/
 
 ### 1.2. Description of the dataset 
 - Using **`Bitcoin Tweets** data from Kaggle 
-  - 300,000 tweets * 13 columns with information about the tweets (information about the user who tweeted, what they tweeted about, etc)   
+  - 300,000 tweets * 13 columns with information about the tweets (information about the user who tweeted, what they tweeted about, etc)
+  - A lot of raw text data, which required some EDA & preprocessing later   
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
 - Using Alpha Vantage's API to get the Bitcoin price (same as in the previous project) 
 
