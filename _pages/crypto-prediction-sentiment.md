@@ -21,7 +21,7 @@ permalink: /crypto-prediction-sentiment/
 - 2.1. Data EDA & Preprocessing 
 - 2.2. Modeling & Results 
 
-#### 3. Limitattions and Next Steps 
+#### 3. Limitations and Next Steps 
 
 # 1. Introduction 
 ### 1.1. Problem Statement
