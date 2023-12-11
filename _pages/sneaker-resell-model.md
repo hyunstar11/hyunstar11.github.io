@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Sneaker Resell Price Prediction Model
-permalink: /project-1/
+permalink: /sneaker-resell-model/
 ---
 
 # Sneaker Resell Price Prediction Model
