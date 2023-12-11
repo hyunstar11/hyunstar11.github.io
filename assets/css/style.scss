@@ -20,6 +20,14 @@
     color: #333;
     border-radius: 3px;
     border: 1px solid #ccc;
+    text-align: center; // Centers text horizontally
+    display: flex; // Enables flexbox for this element
+    align-items: center; // Centers content vertically in the flex container
+    justify-content: center; // Centers content horizontally in the flex container
+    width: 200px; // Adjust the width as needed
+    height: 50px; // Adjust the height as needed
+    font-size: 16px; // Adjust the font size as needed, increased for better visibility
+    // Add more properties here if necessary
 }
 
 .navigation-buttons .button:hover {
