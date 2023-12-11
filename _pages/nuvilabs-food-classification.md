@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Nuvilabs Food Classification Model 
-permalink: /project-3/
+permalink: /nuvilabs-food-classification/
 ---
 
 # Nuvilabs Food Classification Model 
