@@ -1,10 +1,10 @@
 ---
 layout: custom
-title: Bitcoin Price Direction Prediction Model 
-permalink: /project-2/
+title: Cryptocurrency Price Direction Prediction Model 
+permalink: /crypto-direction-prediction/
 ---
 
-# Bitcoin Price Directional Prediction Model
+# Cryptocurrency Price Direction Prediction Model
 
 # Project Outline 
 
