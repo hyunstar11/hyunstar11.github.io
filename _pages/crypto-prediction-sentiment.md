@@ -14,21 +14,21 @@ permalink: /crypto-prediction-sentiment/
 # Table of Contents 
 
 #### 1. Introduction
- - 1.1. Problem
+ - 1.1. Problem Statement 
  - 1.2. Description of Dataset 
 
-#### 2. Project Progress 
+#### 2. Steps 
 - 2.1. Data EDA & Preprocessing 
 - 2.2. Modeling & Results 
 
-#### 3. Retrospective and future development  
+#### 3. Limitattions and Next Steps 
 
 # 1. Introduction 
-### 1.1. Problem
+### 1.1. Problem Statement
 - Objective: To create a deep learning model that predicts the price direction of Bitcoin, which is like an index in the cryptocurrency market (up or down). 
-  - In the previous project (Bitcoin Price Direction Prediction Model), we predicted the direction of the price based on the Bitcoin price, but this time we used cryptocurrency-related Twitter data.  
-  - Q. Why Twitter data?" : You can often hear the term "human indicator" in the asset market; when a person buys a stock or cryptocurrency, the price of the stock or cryptocurrency drops, and this person is called a human indicator (a kind of meme). Like YouTubers Park00 and Sa0. There is even a neologism called 0-half-honey because it is said that if someone's position is reversed, it is honey). So, how can we quantify these "human indicators"? Can human metrics provide insights in investing? A thought experiment
-- We started the project with the goal of eventually creating a kind of TradingView indicator using Twitter sentiment analysis.
+  - In the previous project (Bitcoin Price Direction Prediction Model), I predicted the direction of the price based on the Bitcoin price, but this time I used cryptocurrency-related Twitter data found on Kaggle 
+  - Why Twitter data? : You can often hear the term "human indicator" in the asset market; when a person buys a stock or crypto, the price of the stock or cryptocurrency drops, and this person is called a human indicator (sort of a meme). So, how can we quantify these "human indicators"? Can human metrics provide insights in investing? A thought experiment.
+- I started the project with the eventual goal of eventually creating a kind of TradingView indicator using Twitter sentiment analysis.
   - For example.) Algorithmic entry points for long/short trades based on Wave Trend, Super Trend, etc. that can be found in TradingView.  
 
 ### 1.2. Description of the dataset 
@@ -71,14 +71,14 @@ permalink: /crypto-prediction-sentiment/
 ### 2.3. Results 
 - 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment.  
   - This is not significant as it is a 50/50 chance of predicting up or down.  
-- However, when we look at the graph of Sentiment vs. BTC Price (based on the results of the Vader model) 	
+- However, when I look at the graph of Sentiment vs. BTC Price (based on the results of the Vader model) 	
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
   - High sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
     - This means that during periods of sentiment spikes, people who are not used to volatility / investors who are heavily leveraged in a particular direction may want to reduce their leverage. 
       - E.g. Leveraged products (like 3X), derivatives (Futures, Options, etc.)
    
 # 3. Retrospective and future development  
-- There were many things we wanted to do, but we had difficulty implementing them (early in the project, we had service development in mind - we considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
+- There were many things I wanted to do, but I had difficulty implementing them (early in the project, we had service development in mind - I considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
 - Future Development 
   - Consider other sentiment analysis tools besides Vader 
   - Analyze sentiment outside of Twitter (news articles, etc.) 
