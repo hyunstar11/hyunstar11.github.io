@@ -32,7 +32,7 @@ permalink: /crypto-prediction-sentiment/
   - Ex). Algorithmic entry points for long/short trades based on Wave Trend, Super Trend, etc. that can be found in TradingView.  
 
 ### 1.2. Description of the dataset 
-- Used **`Bitcoin Tweets** data from Kaggle 
+- Used **Bitcoin Tweets** data from Kaggle 
   - 300,000 tweets * 13 columns with information about the tweets (information about the user who tweeted, what they tweeted about, etc)
   - A lot of raw text data, which required some EDA & preprocessing later   
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
@@ -72,25 +72,24 @@ permalink: /crypto-prediction-sentiment/
 ### 2.3. Results 
 - 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment  
   - This is not a significant result as it is a 50/50 chance of predicting up or down  
-- However, when I look at the graph of Sentiment vs. BTC Price (based on the results of the Vader model) 	
+- However, when we observe the graph of Sentiment vs. BTC Price (based on the results of the Vader model), 	
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
-  - High sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
+  - High volume of sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
     - This means that during periods of sentiment spikes, people who are not used to volatility / investors who are heavily leveraged in a particular direction may want to reduce their leverage. 
       - E.g. Leveraged products (like 3X), derivatives (Futures, Options, etc.)
    
-# 3. Retrospective and future development  
-- There were many things I wanted to do, but I had difficulty implementing them (early in the project, we had service development in mind - I considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
+# 3. Limitations and Next Steps 
+- There were many things I wanted to do, but I had difficulty implementing them (early in the project, I had service development in mind - considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
 - Future Development 
   - Consider other sentiment analysis tools besides Vader 
-  - Analyze sentiment outside of Twitter (news articles, etc.) 
+  - Analyze sentiment outside of Twitter (news articles, etc.. I've seen traders on twitter using news to trade) 
   - Use more modern models other than LSTM? 
     - ARIMA (good for time series prediction) 
   - Quantify the Sentiment ~ Price / Price Direction relationship
     - Make changes to make results easier to understand for people who are not familiar with DL  
-  - Improve DL model performance 
+  - Improve model performance 
     - Need to tune hyperparameters 
 - Need to think about Real Time Application 
-  - Developing an indie that can process Twitter data in real time to suggest high volatility through TradingView charts 
-    - Add Long/Short options to improve the accuracy of price direction prediction    
+ 
 
 
