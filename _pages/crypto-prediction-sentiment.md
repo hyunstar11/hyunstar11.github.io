@@ -28,15 +28,15 @@ permalink: /crypto-prediction-sentiment/
 - Objective: To create a deep learning model that predicts the price direction of Bitcoin, which is like an index in the cryptocurrency market (up or down). 
   - In the previous project (Bitcoin Price Direction Prediction Model), I predicted the direction of the price based on the Bitcoin price, but this time I used cryptocurrency-related Twitter data found on Kaggle 
   - Why Twitter data? : You can often hear the term "human indicator" in the asset market; when a person buys a stock or crypto, the price of the stock or cryptocurrency drops, and this person is called a human indicator (sort of a meme). So, how can we quantify these "human indicators"? Can human metrics provide insights in investing? A thought experiment.
-- I started the project with the eventual goal of eventually creating a kind of TradingView indicator using Twitter sentiment analysis.
-  - For example.) Algorithmic entry points for long/short trades based on Wave Trend, Super Trend, etc. that can be found in TradingView.  
+- I started the project with the eventual goal of creating a kind of TradingView indicator using Twitter sentiment analysis.
+  - Ex). Algorithmic entry points for long/short trades based on Wave Trend, Super Trend, etc. that can be found in TradingView.  
 
 ### 1.2. Description of the dataset 
-- Using **`Bitcoin Tweets** data from Kaggle 
+- Used **`Bitcoin Tweets** data from Kaggle 
   - 300,000 tweets * 13 columns with information about the tweets (information about the user who tweeted, what they tweeted about, etc)
   - A lot of raw text data, which required some EDA & preprocessing later   
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
-- Using Alpha Vantage's API to get the Bitcoin price (same as in the previous project) 
+- Used Alpha Vantage's API to get the Bitcoin price (same as in the previous project) 
 
 # 2. Project progress 
 ### 2.1. Data EDA & Preprocessing 
