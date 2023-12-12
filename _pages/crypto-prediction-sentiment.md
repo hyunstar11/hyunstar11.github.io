@@ -60,18 +60,18 @@ permalink: /crypto-prediction-sentiment/
 
 ### 2.2. Modeling 
 - Predicting Bitcoin Direction via Sentiment Analysis Score 
-  - Using LSTM
-  - Proceeding with the same interval as the price-based directional prediction model performed previously (for comparison between models) 
+  - Usinged
+  - Proceeded with the same interval as the price-based directional prediction model performed previously (for comparison between models) 
     - Set the timeframe to February 5, 2021 - April 22, 2022 (when the project was conducted) 
-    - Add a price direction (price_updown) column 
-      - Set to 1 if the price closes higher on that date and 0 if it closes lower 
-  - Approach as a binary classification problem (Activation= Sigmoid, Loss='binary_crossentropy')
-    - Predict Bitcoin price direction (price_updown) based on Sentiment (vader_neg, neu, pos, comp, class)    
+    - Added a price direction (price_updown) column 
+      - Set the value to '1' if the price closes higher on that date and '0' if it closes lower 
+  - Approached as a binary classification problem (Activation= Sigmoid, Loss='binary_crossentropy')
+    - Predicted Bitcoin price direction (price_updown) based on Sentiment (vader_neg, neu, pos, comp, class)    
 <img width="1097" alt="Screenshot 2022-10-14 10:49 43 am" src="https://user-images.githubusercontent.com/90128775/195744411-6ca219c3-e6eb-4c2c-8eb1-93e4c67f748d.png">
 
 ### 2.3. Results 
-- 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment.  
-  - This is not significant as it is a 50/50 chance of predicting up or down.  
+- 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment  
+  - This is not a significant result as it is a 50/50 chance of predicting up or down  
 - However, when I look at the graph of Sentiment vs. BTC Price (based on the results of the Vader model) 	
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
   - High sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
