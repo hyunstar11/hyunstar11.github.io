@@ -53,7 +53,7 @@ permalink: /crypto-prediction-sentiment/
   - In the case of Bitcoin and eth, they are categorized as big names in the crypto space, and in the case of Elon Musk, he was frequently mentioned in the crypto space due to the 'Doge Coin' and the news of Tesla's purchase of Bitcoin.  
 - Applying Sentiment Analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner) to Twitter data for tweet content
   - Purpose: To identify the positive, negative, and neutral stance of each individual tweet using Vader.
-  - So, what is ``Vader`**?
+  - So, what is **`Vader`**?
     - A sentiment analyzer in the Natural Language Toolkit (NLTK)
     - Categorizes the content in a tweet as positive (1), negative (-1), or neutral (0). 
 - What the dataset looks like after applying VADER (you can see the rating of the tweet through the 'Class' column) 
