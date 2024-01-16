@@ -40,9 +40,10 @@ permalink: /crypto-prediction-sentiment/
 
 # 2. Project progress 
 ### 2.1. Data EDA & Preprocessing 
-- Setting the time period for analysis
-  - Why? - to minimize the running time for models + focus on the time period when cryptocurrency became a popular topic 
-  - Feb 2021 ~ April 2022 -> Reduced to about 10,000 Twitter data 
+
+- Setting the time period for analysis.
+  - Why? - to minimize the running time for models and focus on the time period when cryptocurrency became a popular topic.
+  - From February 2021 to April 2022, the dataset was reduced to approximately 10,000 Twitter data points.
 - Word distribution analysis after text tokenization 
   - Word tokenization to understand what is commonly mentioned in Bitcoin-related tweets
   - Stemming to remove similar words that occur repeatedly (e.g. btc, $btc, bitcoins)  
