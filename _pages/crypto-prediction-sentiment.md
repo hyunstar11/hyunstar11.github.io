@@ -52,8 +52,8 @@ permalink: /crypto-prediction-sentiment/
 - Some frequently used words include **`#bitcoin`**, **`#crypto`**, **`buy`**, **`price`**, **`@elonmusk`**,**`#eth`**, etc. 
   - In the case of Bitcoin and eth, they are categorized as big names in the crypto space, and in the case of Elon Musk, he was frequently mentioned in the crypto space due to the 'Doge Coin' and the news of Tesla's purchase of Bitcoin.  
 - Applying Sentiment Analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner) to Twitter data for tweet content
-  - Purpose: To identify the positive, negative, and neutral stance of each individual tweet using Vader.
-  - So, what is **`Vader`**?
+  - Purpose: To identify the positive, negative, and neutral stance of each individual tweet using VADER.
+  - So, what is **`VADER`**?
     - A sentiment analyzer in the Natural Language Toolkit (NLTK)
     - Categorizes the content in a tweet as positive (1), negative (-1), or neutral (0). 
 - What the dataset looks like after applying VADER (you can see the rating of the tweet through the 'Class' column) 
@@ -68,13 +68,13 @@ permalink: /crypto-prediction-sentiment/
     - Added a price direction (price_updown) column 
       - Set the value to '1' if the price closes higher on that date and '0' if it closes lower 
   - Approached as a binary classification problem (Activation= Sigmoid, Loss='binary_crossentropy')
-    - Predicted Bitcoin price direction (price_updown) based on Sentiment (vader_neg, neu, pos, comp, class)    
+    - Predicted Bitcoin price direction (price_updown) based on Sentiment (VADER_neg, neu, pos, comp, class)    
 <img width="1097" alt="Screenshot 2022-10-14 10:49 43 am" src="https://user-images.githubusercontent.com/90128775/195744411-6ca219c3-e6eb-4c2c-8eb1-93e4c67f748d.png">
 
 ### 2.3. Results 
 - 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment  
   - This is not a significant result as it is a 50/50 chance of predicting up or down  
-- However, when we observe the graph of Sentiment vs. BTC Price (based on the results of the Vader model), 	
+- However, when we observe the graph of Sentiment vs. BTC Price (based on the results of the VADER model), 	
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
   - High volume of sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
     - This means that during periods of sentiment spikes, people who are not used to volatility / investors who are heavily leveraged in a particular direction may want to reduce their leverage. 
@@ -83,7 +83,7 @@ permalink: /crypto-prediction-sentiment/
 # 3. Limitations and Next Steps 
 - There were many things I wanted to do, but I had difficulty implementing them (early in the project, I had service development in mind - considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
 - Future Development 
-  - Consider other sentiment analysis tools besides Vader 
+  - Consider other sentiment analysis tools besides VADER 
   - Analyze sentiment outside of Twitter (news articles, etc.. I've seen traders on twitter using news to trade) 
   - Use more modern models other than LSTM? 
     - ARIMA (good for time series prediction) 
