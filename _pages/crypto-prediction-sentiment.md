@@ -24,6 +24,13 @@ permalink: /crypto-prediction-sentiment/
 
 # 1. Introduction 
 ### 1.1. Problem Statement
+- Objective: To create a deep learning model that predicts the price direction of Bitcoin, similar to an index in the cryptocurrency market (up or down).
+  - In the previous project (Bitcoin Price Direction Prediction Model), I predicted the direction of the price based on the Bitcoin price. However, this time, I utilized cryptocurrency-related Twitter data from Kaggle.
+  - Why Twitter data? You often hear the term "human indicator" in the asset market; when a person buys a stock or crypto, the price tends to drop, and this person is humorously referred to as a "human indicator" (a sort of meme). So, how can we quantify these "human indicators"? Can human metrics provide insights into investing? It's a thought experiment.
+- I initiated the project with the ultimate goal of creating a TradingView-like indicator using Twitter sentiment analysis.
+  - For example, algorithmic entry points for long/short trades based on indicators like Wave Trend, Super Trend, etc., which are commonly found in TradingView.
+
+
 - Objective: To create a deep learning model that predicts the price direction of Bitcoin, which is like an index in the cryptocurrency market (up or down). 
   - In the previous project (Bitcoin Price Direction Prediction Model), I predicted the direction of the price based on the Bitcoin price, but this time I used cryptocurrency-related Twitter data found on Kaggle 
   - Why Twitter data? : You can often hear the term "human indicator" in the asset market; when a person buys a stock or crypto, the price of the stock or cryptocurrency drops, and this person is called a human indicator (sort of a meme). So, how can we quantify these "human indicators"? Can human metrics provide insights in investing? A thought experiment.
