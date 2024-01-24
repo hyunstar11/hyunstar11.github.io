@@ -6,7 +6,7 @@ permalink: /crypto-direction-prediction/
 
 # Cryptocurrency Price Direction Prediction Model
 
-[Click Here for the Project Code](https://github.com/hyunstar11/Portfolio/blob/main/ML%26DL/DL/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20%EA%B0%80%EA%B2%A9%20%EB%B0%A9%ED%96%A5%EC%84%B1%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8/BTC%20Price%20Direction%20Prediction%20(Price%20Driven%20Model).ipynb)
+[Click Here for the Code](https://github.com/hyunstar11/Portfolio/blob/main/ML%26DL/DL/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20%EA%B0%80%EA%B2%A9%20%EB%B0%A9%ED%96%A5%EC%84%B1%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8/BTC%20Price%20Direction%20Prediction%20(Price%20Driven%20Model).ipynb)
 
 # Project Outline 
 
