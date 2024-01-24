@@ -99,8 +99,6 @@ permalink: /nuvilabs-food-classification/
     - duck, bulgogi, stir-fry sauce, smoked chicken, etc. 
     - Can also be seen through Most_Common
 
-ㄴㅇㄹㄴㅇㄹㅇㄴㄹ
-
 ### 2.4. Other models considered 
 - Models I tried and debugged, but couldn't implement due to the time constraints of the project
 - #### Autokeras 
