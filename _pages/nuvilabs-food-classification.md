@@ -6,6 +6,8 @@ permalink: /nuvilabs-food-classification/
 
 # Nuvilabs Food Classification Model 
 
+[Click Here for the Code](https://github.com/hyunstar11/Portfolio/blob/main/ML%26DL/DL/%EA%B8%89%EC%8B%9D%20%EC%8B%9D%EB%8B%A8%20%EC%B6%94%EC%B2%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84%20%EC%9C%84%ED%95%9C%20%EC%9D%8C%EC%8B%9D%20%EB%A9%94%EB%89%B4%20%EB%B6%84%EB%A5%98%EB%AA%A8%EB%8D%B8%20%EA%B0%9C%EB%B0%9C%20/AI_10_%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%80%E1%85%B2%E1%84%92%E1%85%A7%E1%86%AB_CS2_%E1%84%82%E1%85%AE%E1%84%87%E1%85%B5%E1%84%85%E1%85%A2%E1%86%B8.ipynb)
+
 # Project Outline 
 
 #### 1. Introduction
