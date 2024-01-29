@@ -77,7 +77,8 @@ Cleaning the Data:
 
 ![Feature Importance](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/acd3c069-f267-49bc-9ac6-cc59f2b90be2)
 
-
+- The chart above indicates that the features such as 'airjordan', 'Release Day' and 'yeezy350' are the most influential features in predicting the resale price of sneakers.
+  
 ### 2.4. Interpreting Coefficients (PDP Plot)
 
 ![PDP Plot_Jordan](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/1a6abc97-50a4-4ada-a733-a35cba9c2a1d)
