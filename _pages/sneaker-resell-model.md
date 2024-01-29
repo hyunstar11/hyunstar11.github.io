@@ -84,5 +84,5 @@ Revised in November 2023
 - PDP Plot for the feature 'airjordan' indicates that the shoe being and Air Jordan model is positively correleated with having a higher resell price
   
 ![PDP_ReleaseDate](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/f86ffcb7-8ae3-41ec-a53b-2c6c20bd3dd0)
-- PDP Plot for the feature 'Release Day', on the other hand, shows a bit of variability on the outcome, as it peaks around 7th~8th day, indicating that releases on these days have a higher predicted outcome on average 
+- PDP Plot for the feature 'Release Day', on the other hand, shows a bit of variability on the outcome, as it peaks around 9th~11th days, indicating that releases on these days have a higher predicted outcome on average 
 
