@@ -86,3 +86,68 @@ Revised in November 2023
 ![PDP_ReleaseDate](https://github.com/hyunstar11/hyunstar11.github.io/assets/90128775/f86ffcb7-8ae3-41ec-a53b-2c6c20bd3dd0)
 - PDP Plot for the feature 'Release Day', on the other hand, shows a bit of variability on the outcome, as it peaks around 9th~11th days, indicating that releases on these days have a higher predicted outcome on average 
 
+# Sneaker Resell Prediction Service (Webpage Development) (2022.02.11~16) 
+
+### Based on the Model developed during the 'Sneaker Resell Price Prediction Model' above 
+- [모델 개발 관련 내용은 이 링크 클릭](https://github.com/hyunstar11/Portfolio/tree/main/ML%26DL/ML/%ED%95%9C%EC%A0%95%ED%8C%90%20%EC%8B%A0%EB%B0%9C%20%EB%A6%AC%EC%85%80%EA%B0%80%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8)  
+
+
+# 프로젝트 목차 
+
+#### 1. 서론
+ - 1.1. 문제
+ - 1.2. 데이터셋에 대한 설명 
+
+#### 2. 프로젝트 진행 과정 
+- 2.1. 데이터 파이프라인 구축
+- 2.2. API 개발 
+- 2.3. Metabase를 통한 시각화 진행 
+
+#### 3. 회고 및 향후 발전방향  
+
+# 1. 서론 
+### 1.1. 문제
+- 목적: 바로 직전 프로젝트 때 개발했던 한정판 신발 리셀가 예측 모델을 기반으로 리셀가 예측 서비스를 개발하기 위함 
+  - 서비스를 통해 모델을 더욱 쉽게 이해하고 모델을 테스트해볼 수 있을 것으로 기대
+  - 궁극적으로는 소비자와 플랫폼의 신발 선택에 도움을 주는 게 목표 
+
+### 1.2. 데이터셋에 대한 설명 
+- 이전 프로젝트 때 사용했던 StockX 거래 데이터셋을 그대로 사용 (CSV 파일) 
+
+![StockX_Modified](https://user-images.githubusercontent.com/90128775/184083870-171485bc-ce94-41d5-bf84-07de23ccc5ff.png)
+
+# 2. 프로젝트 진행 과정 
+### 2.1. 데이터 파이프라인 구축 
+- DATA: StockX 에서 제공하는 신발 거래데이터 획득 후 전처리 진행 
+- STORAGE: 전처리된 데이터를 DB에 적재 
+- API: Flask로 서비스 배포
+- VISUALIZE: Metabase 대시보드를 통해 시각화 
+
+### 2.2. API 개발 
+- Flask 기반으로 개발 
+- Lasso Regression 모델은 피클링한 후 APP 파일에서 적용 
+- 서비스의 편의성보다는 서비스 제공 자체에 초점을 두었음 
+
+<img width="1075" alt="스크린샷 2022-07-20 오후 10 55 11" src="https://user-images.githubusercontent.com/90128775/180002955-4add352e-b94c-40ed-a941-d148c1af57c3.png">
+
+<img width="1140" alt="스크린샷 2022-07-20 오후 10 55 55" src="https://user-images.githubusercontent.com/90128775/180003017-66b19288-5677-4c23-955b-9d2a5212d1fa.png">
+
+<img width="1071" alt="스크린샷 2022-07-20 오후 10 59 52" src="https://user-images.githubusercontent.com/90128775/180003175-78e7ec69-57e0-40ac-88c0-74dc837c0b94.png">
+
+ <img width="1071" alt="스크린샷 2022-07-20 오후 11 00 18" src="https://user-images.githubusercontent.com/90128775/180003202-1551b1b9-fa56-40e2-8c84-c9c39eecc9f8.png">
+
+
+예측결과 vs. 실제 결과: 예측 값이 실제 값 보다 13% 정도 높다는 걸 확인할 수 있음
+
+### 2.3 Metabase를 통한 시각화 진행 
+- 판매 데이터의 신발 사이즈들을 정규분포를 띔 
+- 신발들이 가장 많이 팔린 주들은 뉴욕, 캘리포니아, 텍사스, 플로리다 그리고 오레건 주
+- 시간이 더 지날수록 가격 프리미엄이 어느 정도 올라가는 현상이 파악됨 
+
+<img width="1413" alt="스크린샷 2022-07-20 오후 11 00 44" src="https://user-images.githubusercontent.com/90128775/180021750-233ea0ec-04be-475d-a558-1d90df832072.png">
+
+# 3. 회고 및 향후 발전방향  
+- 헤로쿠를 통해 웹페이지 배포하기 
+- 웹페이지 디자인/편의성 개선 
+- 추가적인 데이터 확보를 통해 나이키/아디다스 한정판 외 다른 신발들도 취급할 수 있게 만들기 
+
