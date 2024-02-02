@@ -90,7 +90,7 @@ permalink: /nuvilabs-food-classification/
   
 ![Screenshot 2022-08-03 1 16 19 PM](https://user-images.githubusercontent.com/90128775/182523089-07a1f4d2-3994-4a4a-8856-195d4f69ea47.png)
 
-- **To conclude, the KoBERT model is not a good model for learning the characteristics of food menus. **
+- To conclude, the KoBERT model is not a good model for learning the characteristics of food menus. 
 - The classification of the menus in the word list is easily accomplished, but when the model is run on a new menu that is not in the list, it does not perform well. 
 
 - #### Word Cloud 
