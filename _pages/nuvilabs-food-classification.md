@@ -11,10 +11,10 @@ permalink: /nuvilabs-food-classification/
 # Project Outline 
 
 #### 1. Introduction
-- 1.1. Why the topic?  
+- 1.1. Problem Statement 
 - 1.2. Description of the dataset 
 
-#### 2. Project Progress 
+#### 2. EDA & Modeling
 - 2.1. EDA 
 - 2.2. Modeling
 - 2.3. Results and Analysis 
@@ -23,7 +23,7 @@ permalink: /nuvilabs-food-classification/
 #### 3. Limitations and Suggestions for Improvement  
 
 # 1. Introduction 
-### Why the topic? 
+### Problem Statement 
 
 - Nuvilabs, a Korean food-tech startup, wanted to develop a diet recommendation system in addition to its current school lunch platform and provide it to school nutritionists. 
 - The goal was to gain insights into school food trends by analyzing various menus from the a Public dataset for Korean school food menus
