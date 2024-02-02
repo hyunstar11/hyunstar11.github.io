@@ -17,10 +17,10 @@ permalink: /nuvilabs-food-classification/
 #### 2. Project Progress 
 - 2.1. EDA 
 - 2.2. Modeling
-- 2.3. Modeling results and analysis 
+- 2.3. Results and Analysis 
 - 2.4. Other models considered  
 
-#### 3. Limitations and Future Development 
+#### 3. Limitations and Suggestions for Improvement  
 
 # 1. Introduction 
 ### Why the topic? 
@@ -59,7 +59,7 @@ permalink: /nuvilabs-food-classification/
   - Advantages: Korean-specific pre-learning model
   - Classification criteria: 5 types of meat classification (based on Nubi Lab's internal criteria)
 
-### 2.3. Modeling process and results (1st case, 2nd case, KoBERT model training and results) 
+### 2.3. Results and Analysis  (1st case, 2nd case, KoBERT model training and results) 
 - To check the model performance, I compared each model's accuracy with the dataset (1855 lunch menus) that Nubilab has already classified. 
 
 - #### 1st Case 
@@ -114,7 +114,7 @@ permalink: /nuvilabs-food-classification/
     - Tokenization via KoNLPy - a package that provides a Korean corpus 
 - Result: No problems with tokenization, but errors occurred when specifying tokenized data as train data for the model.
 
-# 3. Limitations and Future Developments 
+# 3. Limitations and Suggestions for Improvement 
 
 ### Limitations 
 - Poor feature learning for food words; poor classification for new menu items  
