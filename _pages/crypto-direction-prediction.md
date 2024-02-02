@@ -18,7 +18,7 @@ permalink: /crypto-direction-prediction/
 - 2.1. Data EDA & Preprocessing 
 - 2.2. Modeling & Results 
 
-#### 3. Reflection 
+#### 3. Limitations and Suggestions for Improvement
 
 # 1. Introduction 
 ### 1.1. Problem Statement
