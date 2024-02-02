@@ -18,26 +18,25 @@ permalink: /nuvilabs-food-classification/
 - 2.1. EDA 
 - 2.2. Modeling
 - 2.3. Results and Analysis 
-- 2.4. Other models considered  
+- 2.4. Other Models Considered  
 
 #### 3. Limitations and Suggestions for Improvement  
 
 # 1. Introduction 
 ### Why the topic? 
 
-- Nubilab, a Korean food-tech startup, wanted to develop a diet recommendation system in addition to its current school lunch platform and provide it to nutritionists. 
-- The goal was to provide insights into food trends by including foods that have recently appeared in school lunches in the recommendation system.  
-- To do this, I wanted to develop a model that labels new menu items according to the different criteria. 
-- For this project, I classified the 'meat' category, which is one of the important criteria for diet recommendation (classifying which meat is included in the menu).   
-
+- Nuvilabs, a Korean food-tech startup, wanted to develop a diet recommendation system in addition to its current school lunch platform and provide it to school nutritionists. 
+- The goal was to gain insights into school food trends by analyzing various menus from the a Public dataset for Korean school food menus
+- To do this, I wanted to develop a model that labels new menu items according to a different criteria
+- For this project, I categorized the menus based on the type of meat they contain, an important criterion for dietary recommendations
+  
 ### Description of the dataset 
-
 - Public data provided by the NICE Education Information Portal (school lunch data from the Seoul Metropolitan Office of Education)  
 - Extracted the food names from the lunch menus, removed the duplicates
+- Link: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
 
--링크: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
+### 2. EDA & Modeling
 
-### 2. Project Progress 
 ### 2.1. EDA 
 
 - Removed duplicate menus (660,000 -> 5.5K) 
@@ -99,7 +98,7 @@ permalink: /nuvilabs-food-classification/
     - duck, bulgogi, stir-fry sauce, smoked chicken, etc. 
     - Can also be seen through Most_Common
 
-### 2.4. Other models considered 
+### 2.4. Other Models Considered 
 - Models I tried and debugged, but couldn't implement due to the time constraints of the project
 - #### Autokeras 
   - Why I considered it: AutoML program. Convenience UP
@@ -124,7 +123,7 @@ permalink: /nuvilabs-food-classification/
 - KoBERT is too complex a model to use for this classification task; need to see if there is a model that learns better on the word 'food' itself than KoBERT. 
 - Filter and label in a different way than KoBERT (direct labeling) to create a model that recommends a diet based on the results. 
 
-### Personal reflection 
+### Personal Reflection 
 - Modeling and debugging took time away from getting the desired results 
 - Approach: I wish I had reviewed the available models before trying this or that one.
   - The models were new to me, so I was more inclined to try them out first.   
