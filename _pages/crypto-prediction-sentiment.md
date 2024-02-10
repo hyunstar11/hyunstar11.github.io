@@ -41,37 +41,25 @@ Aiming to develop a TradingView-like indicator, this project explores the viabil
 ![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
 ### 2.2. Modeling 
-- Predicting Bitcoin Direction via Sentiment Analysis Score 
-  - Usinged
-  - Proceeded with the same interval as the price-based directional prediction model performed previously (for comparison between models) 
-    - Set the timeframe to February 5, 2021 - April 22, 2022 (when the project was conducted) 
-    - Added a price direction (price_updown) column 
-      - Set the value to '1' if the price closes higher on that date and '0' if it closes lower 
-  - Approached as a binary classification problem (Activation= Sigmoid, Loss='binary_crossentropy')
-    - Predicted Bitcoin price direction (price_updown) based on Sentiment (VADER_neg, neu, pos, comp, class)    
+The modeling stage involved:
+
+Sentiment Scores as Predictors: Using sentiment analysis scores to predict Bitcoin price movements.
+Binary Classification: The model treats the prediction task as a binary classification problem, with the Bitcoin price direction labeled as '1' for an increase and '0' for a decrease on a given day.
 <img width="1097" alt="Screenshot 2022-10-14 10:49 43 am" src="https://user-images.githubusercontent.com/90128775/195744411-6ca219c3-e6eb-4c2c-8eb1-93e4c67f748d.png">
 
 ### 2.3. Results 
-- 0.5 accuracy when predicting the direction of the Bitcoin price using market sentiment  
-  - This is not a significant result as it is a 50/50 chance of predicting up or down  
-- However, when we observe the graph of Sentiment vs. BTC Price (based on the results of the VADER model), 	
+The sentiment-based model achieved an accuracy of 0.5 in predicting Bitcoin's price direction, indicating no better than random chance. However, analysis suggests that sentiment volume is correlated with price volatility, informing potential trading strategies for periods of high sentiment activity.
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
-  - High volume of sentiment from multiple market participants (whether positive or negative) leads to high price volatility (the more reactions, the more positive/negative/neutral).
-    - This means that during periods of sentiment spikes, people who are not used to volatility / investors who are heavily leveraged in a particular direction may want to reduce their leverage. 
-      - E.g. Leveraged products (like 3X), derivatives (Futures, Options, etc.)
    
 # 3. Limitations and Next Steps 
-- There were many things I wanted to do, but I had difficulty implementing them (early in the project, I had service development in mind - considered some kind of price query platform using DASH, but changed direction when debugging became too time-consuming)
-- Future Development 
-  - Consider other sentiment analysis tools besides VADER 
-  - Analyze sentiment outside of Twitter (news articles, etc.. I've seen traders on twitter using news to trade) 
-  - Use more modern models other than LSTM? 
-    - ARIMA (good for time series prediction) 
-  - Quantify the Sentiment ~ Price / Price Direction relationship
-    - Make changes to make results easier to understand for people who are not familiar with DL  
-  - Improve model performance 
-    - Need to tune hyperparameters 
-- Need to think about Real Time Application 
+The project encountered practical limitations, such as the initial ambition to create a query platform which was set aside due to the complexity of implementation. Future work will explore:
+
+- Diverse Sentiment Analysis Tools: To expand beyond the capabilities of VADER.
+- Broader Sentiment Sources: Including news articles and other media.
+- Advanced Modeling Techniques: Investigating alternatives to LSTM, such as ARIMA.
+- Sentiment-Price Relationship Quantification: To improve interpretability for non-experts.
+- Model Optimization: Through hyperparameter tuning and validation.
+- Real-Time Application Consideration: To enhance practicality in live market conditions.
  
 
 
