@@ -41,15 +41,11 @@ The data preprocessing stage involved:
 #### 2.2.1. Approach 
 The modeling process involved two primary steps: 
 - 1. Developing a model based on stationary data
-
 - 2. Implementing a binary classification model to predict price direction
 
 ### 2.2.2. Model Details
 - Normalization: Data was normalized to a 0-1 range to optimize model performance
-<img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
-
 - LSTM Usage: Given its efficacy in handling time series data, LSTM (Long Short-Term Memory) was chosen as the primary modeling technique. LSTM models are particularly adept at preserving historical information, making them ideal for our predictive task.
-<img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
 #### 2.2.2.1. First Model 
 - Developed a simple LSTM model for stationary data. 
