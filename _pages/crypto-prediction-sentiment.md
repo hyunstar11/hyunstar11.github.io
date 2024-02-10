@@ -29,15 +29,15 @@ Unlike the models from a previous project that used price data, this iteration i
 Aiming to develop a TradingView-like indicator, this project explores the viability of using sentiment analysis to establish algorithmic trading signals.
  
 ### 1.2. Description of the dataset 
-- Bitcoin Price Data: Sourced from Alpha Vantage's API, identical to the data used in the previous project.
-- Bitcoin Tweets from Kaggle: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
+- **Bitcoin Price Data**: Sourced from Alpha Vantage's API, identical to the data used in the previous project.
+- **Bitcoin Tweets from Kaggle**: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
 
 # 2. Project Methodology
 ### 2.1. Data Exploration and Preprocessing
-- Timeframe Selection: Focused on the period from February 2021 to April 2022, reflecting when cryptocurrency discussions peaked, reducing the dataset to around 10,000 tweets.
-- Text Analysis: Implemented word tokenization and stemming to parse through common terminologies in Bitcoin-related tweets.
-- Sentiment Analysis with VADER: Applied to categorize tweet sentiments, aiming to correlate this data with Bitcoin's price direction.
+- **Timeframe Selection**: Focused on the period from February 2021 to April 2022, reflecting when cryptocurrency discussions peaked, reducing the dataset to around 10,000 tweets.
+- **Text Analysis**: Implemented word tokenization and stemming to parse through common terminologies in Bitcoin-related tweets.
+- **Sentiment Analysis with VADER**: Applied to categorize tweet sentiments, aiming to correlate this data with Bitcoin's price direction.
 ![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
 ### 2.2. Modeling 
