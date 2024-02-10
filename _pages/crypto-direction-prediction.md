@@ -16,7 +16,7 @@ permalink: /crypto-direction-prediction/
 
 #### 2. Project Methodology
 - 2.1. Data EDA & Preprocessing 
-- 2.2. Modeling & Results 
+- 2.2. Modeling and Evaluation
 
 #### 3. Retrospective and Future Directions
 
