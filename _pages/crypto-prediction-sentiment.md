@@ -16,7 +16,7 @@ permalink: /crypto-prediction-sentiment/
  - 1.1. Problem Statement 
  - 1.2. Description of Dataset 
 
-#### 2. Steps 
+#### 2. Project Methodology
 - 2.1. Data EDA & Preprocessing 
 - 2.2. Modeling & Results 
 
@@ -24,21 +24,16 @@ permalink: /crypto-prediction-sentiment/
 
 # 1. Introduction 
 ### 1.1. Problem Statement
-- Objective: To create a deep learning model that predicts the price direction of Bitcoin, similar to an index in the cryptocurrency market (up or down)
-  - In the previous project (Bitcoin Price Direction Prediction Model), I predicted the direction of the price based on the Bitcoin price. However, this time, I utilized cryptocurrency-related Twitter data from Kaggle.
-  - Why Twitter data? You often hear the term "human indicator" in the asset market; when a person buys a stock or crypto, the price tends to drop, and this person is humorously referred to as a "human indicator" (a sort of meme). So, how can we quantify these "human indicators"? Can human metrics provide insights into investing? It's a thought experiment
-- I started the project with the ultimate goal of creating a TradingView-like indicator using Twitter sentiment analysis
-  - For example, algorithmic entry points for long/short trades based on indicators like Wave Trend, Super Trend, etc., which are commonly found in TradingView
+Unlike the models from a previous project that used price data, this iteration incorporates cryptocurrency-related Twitter data to capture market sentiment, hypothesizing its influence on price movements. This "human indicator" concept, derived from market humor, raises the question: Can quantified sentiment data from social media predict investment trends?
+
+Aiming to develop a TradingView-like indicator, this project explores the viability of using sentiment analysis to establish algorithmic trading signals.
  
 ### 1.2. Description of the dataset 
-- Used **Bitcoin Tweets** data from Kaggle
-  - The Bitcoin Tweets data included all kinds of tweets about cryptocurrency
-  - 300,000 tweets * 13 columns with information about the tweets (information about the user who tweeted, what they tweeted about, etc)
-  - A lot of raw text data, which required some EDA & preprocessing later on   
+- Bitcoin Tweets from Kaggle: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
+- Bitcoin Price Data: Sourced from Alpha Vantage's API, identical to the data used in the previous project.
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
-- Used Alpha Vantage's API to get the Bitcoin price (same as in the previous project) 
 
-# 2. Project progress 
+# 2. Project Methodology
 ### 2.1. Data EDA & Preprocessing 
 
 - Setting the time period for analysis.
