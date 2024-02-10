@@ -14,7 +14,7 @@ permalink: /nuvilabs-food-classification/
 - 1.1. Problem Statement 
 - 1.2. Description of the dataset 
 
-#### 2. EDA & Modeling
+#### 2. Steps
 - 2.1. EDA 
 - 2.2. Modeling
 - 2.3. Results and Analysis 
@@ -35,7 +35,7 @@ permalink: /nuvilabs-food-classification/
 - Extracted the food names from the lunch menus, removed the duplicates
 - Link: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
 
-### 2. EDA & Modeling
+### 2. Steps
 
 ### 2.1. EDA 
 
