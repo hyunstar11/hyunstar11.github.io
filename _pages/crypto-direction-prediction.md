@@ -14,41 +14,45 @@ permalink: /crypto-direction-prediction/
  - 1.1. Problem Statement
  - 1.2. Description of the dataset 
 
-#### 2. Project Steps  
+#### 2. Project Methodology
 - 2.1. Data EDA & Preprocessing 
 - 2.2. Modeling & Results 
 
-#### 3. Limitations and Suggestions for Improvement
+#### 3. Retrospective and Future Directions
 
 # 1. Introduction 
 ### 1.1. Problem Statement
-- Purpose: To create a model that predicts the price direction (up or down) of bitcoin, which is an index in the cryptocurrency market
-  - Stock price/bitcoin prediction models commonly found on the internet are prone to summation of processes 
-    - Why?: Because they use non-stationary data instead of stationary data 
-  - Problem : Can we create a model that helps us with trading/investment decisions based on data (price) to minimize FOMO and make data-driven decisions? 
+- The goal of this project is to develop a model that accurately predicts the directional movement (up or down) of Bitcoin prices, addressing a common issue in stock and cryptocurrency prediction models: their reliance on non-stationary data, which often leads to inaccurate forecasts. By focusing on stationary data, this project aims to create a more reliable model that supports trading and investment decisions, helping to minimize the influence of FOMO (Fear Of Missing Out) and encouraging data-driven strategies.
 
 ### 1.2. Description of the dataset 
-- I used Alpha Vantage's API to get daily Bitcoin price data (Open, Low, Close, Volume) 
+- The dataset comprises daily Bitcoin price metrics (Open, Low, Close, Volume), sourced from Alpha Vantage's API. This dataset spans from January 2021 to April 2022, a period chosen due to significant institutional investments in Bitcoin, enhancing the dataset's relevance for predictive modeling.
 
-# 2. Project Steps 
-### 2.1. Data EDA & Preprocessing 
-- Time period: Data from January 2021 to April 2022, when I was working on the project. 
-  - Rationale for the Time period selection: Significant institutional buying of Bitcoin starting in 2021 (e.g. Tesla, Fidelity Investments, Nexon, etc.) 
-- Preprocessed closing prices for binary classification models: changed to 1 for positive closes and 0 for negative closes   
-- Converting data from non-stationary to stationary (today's price - previous day's price) 
-  - Why Stationary data? - Data with constant mean, covariance -> better for creating predictive models
-- Preprocessing of Closing Prices for Binary Classification Models: For simplicity, closing prices were processed into a binary format, where a **positive** close is represented as 1 and a **negative** close as 0. This binary representation is aimed at facilitating the classification task in the predictive models.
-- Converting Data from Non-Stationary to Stationary: I transformed the data to a stationary format by calculating the difference between the current day’s price and the previous day’s price.
-- Importance of Stationary Data: Stationarity in time series data, characterized by constant statistical properties like mean and covariance, is crucial for the effectiveness of many predictive models. Stationary data tends to be more predictable and its consistency allows for more reliable statistical inference. This is particularly important for models that are based on the assumption of stationarity, such as ARIMA. While not all models require stationary data, converting to a stationary format often simplifies the analysis and helps in avoiding misleading results due to spurious correlations in non-stationary data. However, it’s important to approach this transformation judiciously, as it can sometimes lead to the loss of important information or introduce other complexities.
+# 2. Project Methodology
+### 2.1. Data Exploration and Preprocessing
+The data preprocessing stage involved:
 
-### 2.2. Modeling & Results 
+- Binary Classification Preparation: Closing prices were categorized into 1 (positive close) or 0 (negative close) to facilitate binary classification in the predictive models.
+- Stationarity Transformation: To ensure model accuracy, the dataset was converted to a stationary format by calculating daily price changes (current day’s price minus previous day’s price). This approach was crucial for maintaining consistent statistical properties, such as mean and covariance, in the dataset, thereby enhancing the predictability required for effective modeling.
 
-- To predict the price direction of Bitcoin 1). Develop a price prediction model with stationary data 2). Developed a price prediction model using binary classification 
-- Normalized the data (converted to 0~1) to increase the performance of the model 
-  - View several days of data and set a window 
-- Use LSTM by default
-  - What is LSTM: Passing on some of the previous data information to the next analysis 
-  - Why use it?: Appropriate for time series data 
+### 2.2. Modeling and Evaluation
+
+#### 2.2.1. Approach 
+The modeling process involved two primary steps: 
+- 1. Developing a model based on stationary data
+
+- 2. Implementing a binary classification model to predict price direction
+
+### 2.2.2. Model Details
+- Normalization: Data was normalized to a 0-1 range to optimize model performance
+<img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
+
+- LSTM Usage: Given its efficacy in handling time series data, LSTM (Long Short-Term Memory) was chosen as the primary modeling technique. LSTM models are particularly adept at preserving historical information, making them ideal for our predictive task.
+<img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
+
+### 2.2.3. Evaluation
+- Through evaluation, the binary classification model demonstrated superior performance, achieving an accuracy of 0.644. Future evaluations will aim to incorporate additional metrics such as precision, recall, and F1-score for a more rounded assessment.
+  
+<img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
 
 - 2.2.1. The first model 
   - LSTM model for stationary data 
@@ -58,15 +62,9 @@ permalink: /crypto-direction-prediction/
   - Proceed to binary classification
 <img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
-- 2.2.3. Evaluation 
-<img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
-
-- After evaluation, we concluded that the binary classification model performed better (0.644 accuracy) 
+# 3. Retrospective and Future Directions
+- Reflecting on the project, further attention to the design of the deep learning model could potentially enhance its performance. Future work will explore additional model validation techniques, hyper-parameter tuning, and the potential integration of other time series modeling approaches, such as ARIMA and ETS, to compare their efficacy against LSTM models.
 
 
-# 3. Retrospective and future development  
-- If we had more time, we could pay more attention to the design of the deep learning model and expect better performance. 
-- Additional model validation and hyper-parameter tuning 
-- Try modeling with other models other than LSTM, such as ARIMA and ETS, which are known to be suitable for time series data.
 
 
