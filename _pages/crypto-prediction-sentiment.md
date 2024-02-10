@@ -29,31 +29,16 @@ Unlike the models from a previous project that used price data, this iteration i
 Aiming to develop a TradingView-like indicator, this project explores the viability of using sentiment analysis to establish algorithmic trading signals.
  
 ### 1.2. Description of the dataset 
-- Bitcoin Tweets from Kaggle: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
 - Bitcoin Price Data: Sourced from Alpha Vantage's API, identical to the data used in the previous project.
+- Bitcoin Tweets from Kaggle: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
 ![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
 
 # 2. Project Methodology
-### 2.1. Data EDA & Preprocessing 
-
-- Setting the time period for analysis.
-  - Why? - to minimize the running time for models and focus on the time period when cryptocurrency became a popular topic.
-  - From February 2021 to April 2022, the dataset was reduced to approximately 10,000 Twitter data points.
-- Word distribution analysis after text tokenization 
-  - Word tokenization to understand what is commonly mentioned in Bitcoin-related tweets
-  - Stemming to remove similar words that occur repeatedly (e.g. btc, $btc, bitcoins)  
-  <img width="609" alt="스크린샷 2022-08-26 오전 12 28 40" src="https://user-images.githubusercontent.com/90128775/186708844-ac81f2b9-78a4-4780-bd3b-88383bd70734.png">
-
-- Some frequently used words include **`#bitcoin`**, **`#crypto`**, **`buy`**, **`price`**, **`@elonmusk`**,**`#eth`**, etc. 
-  - In the case of Bitcoin and eth, they are categorized as big names in the crypto space, and in the case of Elon Musk, he was frequently mentioned in the crypto space due to the 'Doge Coin' and the news of Tesla's purchase of Bitcoin.  
-- Applying Sentiment Analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner) to Twitter data for tweet content
-  - Purpose: To identify the positive, negative, and neutral stance of each individual tweet using VADER.
-  - So, what is **`VADER`**?
-    - A sentiment analyzer in the Natural Language Toolkit (NLTK)
-    - Categorizes the content in a tweet as positive (1), negative (-1), or neutral (0). 
-- What the dataset looks like after applying VADER (you can see the rating of the tweet through the 'Class' column) 
+### 2.1. Data Exploration and Preprocessing
+- Timeframe Selection: Focused on the period from February 2021 to April 2022, reflecting when cryptocurrency discussions peaked, reducing the dataset to around 10,000 tweets.
+- Text Analysis: Implemented word tokenization and stemming to parse through common terminologies in Bitcoin-related tweets.
+- Sentiment Analysis with VADER: Applied to categorize tweet sentiments, aiming to correlate this data with Bitcoin's price direction.
 ![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
-
 
 ### 2.2. Modeling 
 - Predicting Bitcoin Direction via Sentiment Analysis Score 
