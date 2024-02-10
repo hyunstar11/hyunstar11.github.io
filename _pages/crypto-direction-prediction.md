@@ -56,7 +56,7 @@ The modeling process involved two primary steps:
 <img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
 ### 2.2.3. Evaluation
-- Through evaluation, the binary classification model demonstrated superior performance, achieving an accuracy of 0.644. Future evaluations will aim to incorporate additional metrics such as precision, recall, and F1-score for a more rounded assessment.  
+- The **first** model appears to be the better performing model as it has much **lower losses** in both training and validation. The evaluation metrics further support this conclusion with a lower loss and MSE.
 <img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
 
 # 3. Retrospective and Future Directions
