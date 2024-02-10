@@ -34,6 +34,8 @@ The data preprocessing stage involved:
 - Binary Classification Preparation: Closing prices were categorized into 1 (positive close) or 0 (negative close) to facilitate binary classification in the predictive models.
 - Stationarity Transformation: To ensure model accuracy, the dataset was converted to a stationary format by calculating daily price changes (current day’s price minus previous day’s price). This approach was crucial for maintaining consistent statistical properties, such as mean and covariance, in the dataset, thereby enhancing the predictability required for effective modeling.
 
+<img width="801" alt="스크린샷 2022-07-23 오전 1 47 29" src="https://user-images.githubusercontent.com/90128775/180486557-abb9ddaa-c830-42a5-a495-9cfd80ee41b6.png">
+
 ### 2.2. Modeling and Evaluation
 
 #### 2.2.1. Approach 
@@ -49,18 +51,18 @@ The modeling process involved two primary steps:
 - LSTM Usage: Given its efficacy in handling time series data, LSTM (Long Short-Term Memory) was chosen as the primary modeling technique. LSTM models are particularly adept at preserving historical information, making them ideal for our predictive task.
 <img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
+#### 2.2.2.1. First Model 
+- Developed a simple LSTM model for stationary data. 
+<img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
+
+#### 2.2.2.2. Second Model
+- Proceeded to develop a binary clasification model.
+<img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
+
 ### 2.2.3. Evaluation
 - Through evaluation, the binary classification model demonstrated superior performance, achieving an accuracy of 0.644. Future evaluations will aim to incorporate additional metrics such as precision, recall, and F1-score for a more rounded assessment.
   
 <img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
-
-- 2.2.1. The first model 
-  - LSTM model for stationary data 
-<img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
-
-- 2.2.2. Second Model 
-  - Proceed to binary classification
-<img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
 # 3. Retrospective and Future Directions
 - Reflecting on the project, further attention to the design of the deep learning model could potentially enhance its performance. Future work will explore additional model validation techniques, hyper-parameter tuning, and the potential integration of other time series modeling approaches, such as ARIMA and ETS, to compare their efficacy against LSTM models.
