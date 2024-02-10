@@ -48,7 +48,8 @@ Binary Classification: The model treats the prediction task as a binary classifi
 <img width="1097" alt="Screenshot 2022-10-14 10:49 43 am" src="https://user-images.githubusercontent.com/90128775/195744411-6ca219c3-e6eb-4c2c-8eb1-93e4c67f748d.png">
 
 ### 2.3. Results 
-The sentiment-based model achieved an accuracy of 0.5 in predicting Bitcoin's price direction, indicating no better than random chance. However, analysis suggests that sentiment volume is correlated with price volatility, informing potential trading strategies for periods of high sentiment activity.
+The sentiment-based model achieved an accuracy of 50-52% in predicting Bitcoin's price direction, indicating no better than random chance. However, analysis suggests that sentiment volume is correlated with price volatility, informing potential trading strategies for periods of high sentiment activity.
+
 ![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
    
 # 3. Limitations and Next Steps 
