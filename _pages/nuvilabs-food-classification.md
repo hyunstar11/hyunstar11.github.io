@@ -23,14 +23,14 @@ permalink: /nuvilabs-food-classification/
 #### 3. Limitations and Suggestions for Improvement  
 
 # 1. Introduction 
-### Problem Statement 
+### 1.1. Problem Statement 
 
 - Nuvilabs, a Korean food-tech startup, wanted to develop a diet recommendation system in addition to its current school lunch platform and provide it to school nutritionists. 
 - The goal was to gain insights into school food trends by analyzing various menus from the a Public dataset for Korean school food menus
 - To do this, I wanted to develop a model that labels new menu items according to a different criteria
 - For this project, I categorized the menus based on the type of meat they contain, an important criterion for dietary recommendations
   
-### Description of the dataset 
+### 1.2. Description of the dataset 
 - Public data provided by the NICE Education Information Portal (school lunch data from the Seoul Metropolitan Office of Education)  
 - Extracted the food names from the lunch menus, removed the duplicates
 - Link: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
@@ -100,13 +100,13 @@ permalink: /nuvilabs-food-classification/
 
 ### 2.4. Other Models Considered 
 - Models I tried and debugged, but couldn't implement due to the time constraints of the project
-- #### Autokeras 
+- #### 2.4.1. Autokeras 
   - Why I considered it: AutoML program. Convenience UP
   - Pros: Built-in TextClassfier. Separate Tokenization (X).
     - Can do its own neural network search + Can handle many formats, be it text or images. 
   - Cons: Poor performance with specialized data or small data + Can't classify Korean text 
 
-- #### Naive Bayes Classifier 
+- #### 2.4.2. Naive Bayes Classifier 
   - Classification technique based on Bayes' theorem (first trained on 'historical' data)
   - Why: Traditionally used classifier for text categorization 
   - Pros: Easy to implement + doesn't require a lot of data  
