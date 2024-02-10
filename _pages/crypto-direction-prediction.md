@@ -48,16 +48,15 @@ The modeling process involved two primary steps:
 - LSTM Usage: Given its efficacy in handling time series data, LSTM (Long Short-Term Memory) was chosen as the primary modeling technique. LSTM models are particularly adept at preserving historical information, making them ideal for our predictive task.
 
 #### 2.2.2.1. First Model 
-- Developed a simple LSTM model for stationary data. 
+- Developed a simple LSTM model for stationary data to predict the actual price.
 <img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
 
 #### 2.2.2.2. Second Model
-- Proceeded to develop a binary clasification model.
+- Instead of predicitng the actual price, I proceeded to develop a binary clasification model to predict the direction of the Bitcoin Price. 
 <img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
 
 ### 2.2.3. Evaluation
-- Through evaluation, the binary classification model demonstrated superior performance, achieving an accuracy of 0.644. Future evaluations will aim to incorporate additional metrics such as precision, recall, and F1-score for a more rounded assessment.
-  
+- Through evaluation, the binary classification model demonstrated superior performance, achieving an accuracy of 0.644. Future evaluations will aim to incorporate additional metrics such as precision, recall, and F1-score for a more rounded assessment.  
 <img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
 
 # 3. Retrospective and Future Directions
