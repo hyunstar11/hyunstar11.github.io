@@ -15,23 +15,18 @@ Revised in November 2023
  - 1.1. Problem Statement
  - 1.2. Description of the dataset 
 
-#### 2. Steps 
+#### 2. Project Methodology
 - 2.1. EDA and Data Analysis 
 - 2.2. Modeling & Selection   
 - 2.3. Feature Importance 
 - 2.4. Interpreting Coefficients (PDP Plot) 
 
-
-#### 3. Reflection and Next Steps 
-
 # 1. Introduction 
 ### 1.1. Problem Statement 
-- Objective: To analyze the shoe resale market, which has been growing since the second half of 2010, and to predict resale prices using various features. 
-- Chose this topic because it's a domain I've always been interested in ever since I was a kid, and I wanted to see if I could use real data to predict the resale prices of sneakers 
+- The sneaker resale market has seen significant growth since 2010. This project aims to leverage data analysis to predict sneaker resale prices, a topic of personal interest from childhood.
 
 ### 1.2. Description of the dataset  
-- A total of 100,000 Real StockX transactions (2017.09 - 2019.04)
-- A total of 53 shoes (consisting of limited edition shoes such as Adidas Yeezy and Nike Off-White)
+- The project utilizes a dataset of 100,000 transactions from StockX, covering 53 limited edition shoes, including Adidas Yeezy and Nike Off-White models.
 
 ![StockX Data](https://user-images.githubusercontent.com/90128775/184078928-c0470835-e453-448e-b325-7afa42aeeb9d.png)
 
@@ -49,14 +44,13 @@ Revised in November 2023
  - Cleaning the Data:
  - Finally, I removed unnecessary columns like 'Brand' and 'Buyer Region', which were either redundant or not required for my analysis.
 
-#### Q. Is there a premium on the price of shoes over time? 
+#### Questions Explored: 
+
+- **Price Premium Over Time**: Analysis shows a rising floor price of resell premiums over time.
 
 <img width="778" alt="스크린샷 2022-07-21 오전 12 51 17" src="https://user-images.githubusercontent.com/90128775/180027876-3aa4f8e6-03b8-4135-8b16-79101c514fe1.png">
 
-- December 2018 on the left, all data on the right 
- - Observe that the Floor price of resell premiums has been rising over time
-
-#### Q. Does shoe size affect resale value?
+- **Shoe Size Impact on Resale Value**: Findings indicate little correlation between shoe size and resale value.
 
 <img width="413" alt="스크린샷 2022-07-21 오전 12 56 23" src="https://user-images.githubusercontent.com/90128775/180028084-83eed031-0aca-4f1d-a93a-9a0209ce9352.png">
 
