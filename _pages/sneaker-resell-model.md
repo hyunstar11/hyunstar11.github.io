@@ -32,7 +32,8 @@ Revised in November 2023
 
 # 2. Steps
 ### 2.1. EDA and Data Analysis 
-- Overview of My Data Processing Pipeline
+**Overview of My Data Processing Pipeline**
+
 - For the project, I worked with a dataset of sneaker sales, focusing on enhancing the data to make it suitable for advanced analysis and machine learning. Below is an overview of the steps I took to preprocess and transform the data:
 - **Data Loading**: I started by loading the sneaker sales data from a CSV file into a pandas DataFrame.
 - **Date Preprocessing**: The dataset included date fields ('Order Date' and 'Release Date'), which I converted into a more standardized format (MM-DD-YYYY).
