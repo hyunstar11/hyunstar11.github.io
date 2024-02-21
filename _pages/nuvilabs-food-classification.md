@@ -30,7 +30,7 @@ Nuvilabs, a Korean food-tech startup, aimed to enhance its school lunch service 
 The project utilized public data from the NICE Education Information Portal, detailing school lunch menus provided by the Seoul Metropolitan Office of Education. This dataset was processed to extract unique food items, significantly reducing redundancy and enabling a focused analysis.
 - Link: https://open.neis.go.kr/portal/data/service/selectServicePage.do?page=1&rows=10&sortColumn=&sortDirection=&infId=OPEN17320190722180924242823&infSeq=2
 
-### 2. Steps
+# 2. Steps
 
 ### 2.1. Data Exploration and Preprocessing
 <img width="906" alt="Screenshot 2022-07-13 11:36 09 pm" src="https://user-images.githubusercontent.com/90128775/178760402-e4c9a82e-a128-4fe7-a5e4-83dcf2792653.png">
