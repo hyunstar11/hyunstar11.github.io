@@ -39,11 +39,11 @@ The initial data comprised over 660,000 menu items, which was refined to 5,500 u
 
 ### 2.2. Modeling 
 - #### KoBERT Model
-Leveraging the KoBERT model, known for its effectiveness in Korean language tasks, we aimed to categorize food items into five distinct meat categories. This model was chosen for its sophisticated understanding of Korean syntax and semantics, and its capability for multi-class classification.
+Leveraging the KoBERT model, known for its effectiveness in Korean language tasks, I aimed to categorize food items into five distinct meat categories. This model was chosen for its sophisticated understanding of Korean syntax and semantics, and its capability for multi-class classification.
 
 ### 2.3. Results (1st case, 2nd case, KoBERT model training and results) 
-- The KoBERT model's performance was evaluated against a manually categorized set of 1,855 school lunch menus. Despite achieving high accuracy in certain categories, the model exhibited limitations in generalizing to menus not included in the training set. The analysis revealed the model's strengths in identifying specific meat types but highlighted challenges in classifying items without clear meat indicators.
-- 
+- The KoBERT model's performance was evaluated against a pre-categorized set of 1,855 school lunch menus provided by Nuvilabs. Despite achieving high accuracy in certain categories, the model exhibited limitations in generalizing to menus not included in the training set. The analysis revealed the model's strengths in identifying specific meat types but highlighted challenges in classifying items without clear meat indicators.
+ 
 - #### 1st Case 
   - Used the dataset labeled with meat types 1~5 (except for label 0, which is the case of no meat)
   - Label 0 is a non-meat category  
@@ -73,38 +73,13 @@ Leveraging the KoBERT model, known for its effectiveness in Korean language task
   
 ![Screenshot 2022-08-03 1 16 19 PM](https://user-images.githubusercontent.com/90128775/182523089-07a1f4d2-3994-4a4a-8856-195d4f69ea47.png)
 
-- To conclude, the KoBERT model is not a good model for learning the characteristics of food menus. 
-- The classification of the menus in the word list is easily accomplished, but when the model is run on a new menu that is not in the list, it does not perform well. 
-
 - #### Word Cloud 
-  - The most prominent words are 
+  - The most prominent words are:
     - duck, bulgogi, stir-fry sauce, smoked chicken, etc. 
     - Can also be seen through Most_Common
 
-### 2.4. Other Models Considered 
-- Models I tried and debugged, but couldn't implement due to the time constraints of the project
-- #### 2.4.1. Autokeras 
-  - Why I considered it: AutoML program. Convenience UP
-  - Pros: Built-in TextClassfier. Separate Tokenization (X).
-    - Can do its own neural network search + Can handle many formats, be it text or images. 
-  - Cons: Poor performance with specialized data or small data + Can't classify Korean text 
-
-- #### 2.4.2. Naive Bayes Classifier 
-  - Classification technique based on Bayes' theorem (first trained on 'historical' data)
-  - Why: Traditionally used classifier for text categorization 
-  - Pros: Easy to implement + doesn't require a lot of data  
-    - Tokenization via KoNLPy - a package that provides a Korean corpus 
-- Result: No problems with tokenization, but errors occurred when specifying tokenized data as train data for the model.
-
-# 3. Limitations and Suggestions for Improvement 
-
-### Limitations and Next Steps 
+# 3. Limitations and Next Steps 
 - The project faced challenges in model generalization and feature learning for new menu items. Future work will focus on enhancing the word list for better classification, exploring alternative models more suited to food-related tasks, and developing a more dynamic classification approach that can adapt to new menu items more effectively.
-
-### Strengths 
-- Performance can be improved by updating the word list
-- KoBERT is too complex a model to use for this classification task; need to see if there is a model that learns better on the word 'food' itself than KoBERT. 
-- Filter and label in a different way than KoBERT (direct labeling) to create a model that recommends a diet based on the results. 
 
 ### Personal Reflection 
 - This project underscored the importance of model selection and pre-processing in machine learning tasks. The experience gained from experimenting with different models and debugging provided valuable insights into the complexities of text classification, especially in the context of food menus.
