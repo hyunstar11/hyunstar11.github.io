@@ -77,8 +77,8 @@ Leveraging the KoBERT model, known for its effectiveness in Korean language task
   - The most prominent words are:
     - duck, bulgogi, stir-fry sauce, smoked chicken, etc. 
     - Can also be seen through Most_Common
-      
-![단어리스트](https://user-images.githubusercontent.com/90128775/182775833-5879fae0-91c9-4ba5-8c71-b35f1a0519e7.png)
+
+<img width="637" alt="스크린샷 2022-08-03 오후 1 19 27" src="https://user-images.githubusercontent.com/90128775/182568894-1c749410-cdbc-423e-9e7f-478c22e777a8.png">
 
 # 3. Limitations and Next Steps 
 - The project faced challenges in model generalization and feature learning for new menu items. Future work will focus on enhancing the word list for better classification, exploring alternative models more suited to food-related tasks, and developing a more dynamic classification approach that can adapt to new menu items more effectively.
