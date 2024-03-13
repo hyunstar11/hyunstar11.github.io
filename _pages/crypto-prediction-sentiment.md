@@ -24,6 +24,11 @@ This project is significant as it attempts to address the challenges of predicti
 
 # Data Description
 The dataset for this project includes daily Bitcoin price metrics (Open, Low, Close, Volume) obtained from Alpha Vantage's API, covering the period from January 2021 to April 2022. This period was selected due to significant institutional investments in Bitcoin, enhancing the dataset's relevance for predictive modeling purposes.
+![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
+
+# Exploratory Data Analysis (EDA)
+Initial exploration of the Bitcoin price dataset was conducted to understand the data's characteristics, including trends, patterns, and potential anomalies. This phase aimed to identify key features that could influence the predictive models' accuracy.
+![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
 
 **REVISING** 
@@ -49,14 +54,12 @@ Aiming to develop a TradingView-like indicator, this project explores the viabil
 ### 1.2. Description of the dataset 
 - **Bitcoin Price Data**: Sourced from Alpha Vantage's API, identical to the data used in the previous project.
 - **Bitcoin Tweets from Kaggle**: A collection of 300,000 tweets featuring 13 different attributes, including user information and tweet content, all related to cryptocurrency.
-![Screenshot 2022-08-25 10:01:33 PM](https://user-images.githubusercontent.com/90128775/186672838-1fcdb885-b793-4d3c-8155-0bce7e38ef71.png)
 
 # 2. Project Methodology
 ### 2.1. Data Exploration and Preprocessing
 - **Timeframe Selection**: Focused on the period from February 2021 to April 2022, reflecting when cryptocurrency discussions peaked, reducing the dataset to around 10,000 tweets.
 - **Text Analysis**: Implemented word tokenization and stemming to parse through common terminologies in Bitcoin-related tweets.
 - **Sentiment Analysis with VADER**: Applied to categorize tweet sentiments, aiming to correlate this data with Bitcoin's price direction.
-![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
 ### 2.2. Modeling 
 The modeling stage involved:
