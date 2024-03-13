@@ -23,8 +23,6 @@ This project is significant as it attempts to address the challenges of predicti
 # Data Description
 The dataset for this project includes daily Bitcoin price metrics (Open, Low, Close, Volume) obtained from Alpha Vantage's API, covering the period from January 2021 to April 2022. This period was selected due to significant institutional investments in Bitcoin, enhancing the dataset's relevance for predictive modeling purposes.
 
-<img width="801" alt="스크린샷 2022-07-23 오전 1 47 29" src="https://user-images.githubusercontent.com/90128775/180486557-abb9ddaa-c830-42a5-a495-9cfd80ee41b6.png">
-
 # Exploratory Data Analysis (EDA)
 Initial exploration of the Bitcoin price dataset was conducted to understand the data's characteristics, including trends, patterns, and potential anomalies. This phase aimed to identify key features that could influence the predictive models' accuracy.
 
@@ -33,6 +31,8 @@ The preprocessing phase involved several critical steps to prepare the data for 
 
 - Binary Classification Preparation: The closing prices were categorized into 1 (positive close) or 0 (negative close) to enable binary classification.
 - Stationarity Transformation: The dataset was converted to a stationary format by calculating daily price changes. This transformation was essential for enhancing the models' predictability by ensuring consistent statistical properties over time.
+
+<img width="801" alt="스크린샷 2022-07-23 오전 1 47 29" src="https://user-images.githubusercontent.com/90128775/180486557-abb9ddaa-c830-42a5-a495-9cfd80ee41b6.png">
 
 # Models
 **Model Development:**
