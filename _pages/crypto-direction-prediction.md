@@ -8,6 +8,8 @@ permalink: /crypto-direction-prediction/
 
 [Click Here for the Code](https://github.com/hyunstar11/Portfolio/blob/main/ML%26DL/DL/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20%EA%B0%80%EA%B2%A9%20%EB%B0%A9%ED%96%A5%EC%84%B1%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8/BTC%20Price%20Direction%20Prediction%20(Price%20Driven%20Model).ipynb)
 
+*REVISING*
+
 # Executive Summary 
 This project focuses on developing a predictive model for Bitcoin price movements, specifically aiming to forecast the directional change (up or down) of Bitcoin prices. By utilizing stationary data, which maintains consistent statistical properties over time, the project seeks to overcome the common challenge of inaccurate forecasts due to non-stationary data in cryptocurrency prediction models. The methodology involves data preprocessing to ensure stationarity, followed by the development of LSTM models for both price prediction and directional movement classification. The evaluation of these models revealed that the first model, which predicts actual prices, performs better, offering lower losses and more accurate predictions. This research aims to contribute to the field by demonstrating the potential for more reliable cryptocurrency trading strategies that minimize the influence of market sentiments like FOMO.
 
