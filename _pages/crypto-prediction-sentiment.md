@@ -13,6 +13,19 @@ permalink: /crypto-prediction-sentiment/
 # Executive Summary 
 This project focuses on developing a predictive model for Bitcoin price movements, specifically aiming to forecast the directional change (up or down) of Bitcoin prices. By utilizing stationary data, which maintains consistent statistical properties over time, the project seeks to overcome the common challenge of inaccurate forecasts due to non-stationary data in cryptocurrency prediction models. The methodology involves data preprocessing to ensure stationarity, followed by the development of LSTM models for both price prediction and directional movement classification. The evaluation of these models revealed that the first model, which predicts actual prices, performs better, offering lower losses and more accurate predictions. This research aims to contribute to the field by demonstrating the potential for more reliable cryptocurrency trading strategies that minimize the influence of market sentiments like FOMO.
 
+# Introduction
+Background: Cryptocurrency markets are notoriously volatile, making accurate price prediction a challenging but critical task. Traditional examples that can be found on the web often struggle due to the non-stationary nature of data, which can lead to unreliable forecasts.
+
+# Objective
+The primary goal is to develop a predictive model that accurately forecasts the directional movement of Bitcoin prices using stationary data, aiming to improve investment and trading decisions in the cryptocurrency market.
+
+# Significance
+This project is significant as it attempts to address the challenges of predicting cryptocurrency prices with a novel approach, potentially serving as a more reliable guide for traders and investors to navigate the volatile Bitcoin market.
+
+# Data Description
+The dataset for this project includes daily Bitcoin price metrics (Open, Low, Close, Volume) obtained from Alpha Vantage's API, covering the period from January 2021 to April 2022. This period was selected due to significant institutional investments in Bitcoin, enhancing the dataset's relevance for predictive modeling purposes.
+
+
 **REVISING** 
 
 # Project Outline
