@@ -32,6 +32,31 @@ Initial exploration of the Bitcoin price dataset was conducted to understand the
 
 ![Screenshot 2022-08-25 9:53 28 PM](https://user-images.githubusercontent.com/90128775/186670076-76a8163b-67c2-45d0-97b4-1c24a779ac1f.png)
 
+# Preprocessing
+The preprocessing phase involved several critical steps to prepare the data for modeling:
+
+- Binary Classification Preparation: The closing prices were categorized into 1 (positive close) or 0 (negative close) to enable binary classification.
+- Stationarity Transformation: The dataset was converted to a stationary format by calculating daily price changes. This transformation was essential for enhancing the models' predictability by ensuring consistent statistical properties over time.
+
+# Models
+**Model Development:**
+- The modeling process began with the development of a simple LSTM model to predict actual Bitcoin prices based on stationary data.
+Subsequently, a binary classification LSTM model was developed to forecast the direction of Bitcoin price movements.
+
+**Model Evaluation:**
+- The models were evaluated based on their performance metrics, with the first model showing superiority through lower losses and better accuracy in predicting Bitcoin prices.
+
+# Model Comparison
+The comparison between the two developed models highlighted the first model's effectiveness in accurately predicting Bitcoin prices, demonstrating its potential utility for trading strategies that rely on price forecasts.
+
+![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
+
+
+# Key Findings
+The main finding from this project is the effectiveness of using stationary data in improving the accuracy of predictive models for Bitcoin price movements. The LSTM model that predicts actual prices outperforms the binary classification model, suggesting that focusing on price predictions might be more beneficial for traders and investors.
+
+# Conclusions and Next Steps
+This project demonstrates the potential of using stationary data and LSTM models for predicting Bitcoin prices. While the first model showed promising results, there is room for further exploration and improvement. Future directions could include refining the LSTM models, exploring additional data preprocessing techniques, and incorporating other forms of stationary data to enhance model performance. Additionally, extending the research to include other cryptocurrencies and comparing the effectiveness of different modeling approaches would provide valuable insights into the broader applicability of the methodology.
 
 **REVISING** 
 
@@ -73,7 +98,6 @@ Binary Classification: The model treats the prediction task as a binary classifi
 ### 2.3. Results 
 The sentiment-based model achieved an accuracy of 50-52% in predicting Bitcoin's price direction, indicating no better than random chance. However, analysis suggests that sentiment volume is correlated with price volatility, informing potential trading strategies for periods of high sentiment activity.
 
-![스크린샷 2022-08-25 오후 9 37 25](https://user-images.githubusercontent.com/90128775/186669746-5486a81b-00ff-419b-8012-b93da63f81c5.png)
    
 # 3. Limitations and Next Steps 
 The project encountered practical limitations, such as the initial ambition to create a query platform which was set aside due to the complexity of implementation. Future work will explore:
