@@ -41,8 +41,14 @@ The preprocessing phase involved several critical steps to prepare the data for 
 - The modeling process began with the development of a simple LSTM model to predict actual Bitcoin prices based on stationary data.
 Subsequently, a binary classification LSTM model was developed to forecast the direction of Bitcoin price movements.
 
+<img width="770" alt="screenshot 2022-07-23 1 04 33 am" src="https://user-images.githubusercontent.com/90128775/180481895-59407c17-86bf-44d1-882f-815d62fb18d0.png">
+
+<img width="783" alt="Screenshot taken on 2022-07-23 at 1 04 55" src="https://user-images.githubusercontent.com/90128775/180481910-f4445f92-2529-4824-97dd-0680f5d10e18.png">
+
 **Model Evaluation:**
 - The models were evaluated based on their performance metrics, with the first model showing superiority through lower losses and better accuracy in predicting Bitcoin prices.
+
+<img width="1294" alt="Screenshot 2022-07-23 AM 1 26 47" src="https://user-images.githubusercontent.com/90128775/180483039-9f4dde5a-e5ea-43cb-b154-2b73949e5a53.png">
 
 # Model Comparison
 The comparison between the two developed models highlighted the first model's effectiveness in accurately predicting Bitcoin prices, demonstrating its potential utility for trading strategies that rely on price forecasts.
