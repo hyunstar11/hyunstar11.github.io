@@ -24,7 +24,7 @@ permalink: /crypto-prediction-sentiment/
 
 # 1. Introduction 
 ### 1.1. Problem Statement
-Unlike the models from a previous project that used price data, this iteration incorporates cryptocurrency-related Twitter data to capture market sentiment, hypothesizing its influence on price movements. This "human indicator" concept, derived from market humor, raises the question: Can quantified sentiment data from social media predict investment trends?
+Unlike the models from the previous project that used price data, this iteration incorporates cryptocurrency-related Twitter data to capture market sentiment, hypothesizing its influence on price movements. This "human indicator" concept, derived from market humor, raises the question: Can quantified sentiment data from social media predict investment trends?
 
 Aiming to develop a TradingView-like indicator, this project explores the viability of using sentiment analysis to establish algorithmic trading signals.
  
