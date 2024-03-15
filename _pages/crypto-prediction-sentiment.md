@@ -13,6 +13,10 @@ permalink: /crypto-prediction-sentiment/
 ### Executive Summary
 This project explores the potential of cryptocurrency-related Twitter data as a predictor for Bitcoin price movements. By integrating sentiment analysis of Twitter discussions into the model, the study aims to develop a TradingView-like indicator that uses the "human indicator" concept to establish algorithmic trading signals. Despite the innovative approach, the model achieved an accuracy of 50-52%, suggesting that sentiment volume is correlated with price volatility but not directly predictive of price direction. The findings open avenues for future exploration in leveraging social media sentiment as a component of trading strategies.
 
+### Introduction
+**Background:** The volatile nature of the cryptocurrency market has prompted investigations into various predictors of price movements. Recent approaches have considered the potential of social media sentiment as an indicator, reflecting the broader market sentiment.
+
+**Objective:** To evaluate the predictive power of cryptocurrency-related Twitter data on Bitcoin price movements, with a focus on developing algorithmic trading signals based on sentiment analysis.
 
 # Project Outline
 
