@@ -31,7 +31,7 @@ The dataset comprises 100,000 transactions from StockX, including 53 limited edi
   - Shoe Size Impact on Resale Value: Contrary to expectations, shoe size showed little correlation with resale value, underscoring the minimal influence of size on pricing.
 
 ### Modeling & Selection
-- **Model Development:** The study progressed from a baseline model to more sophisticated models like Linear Regression, Random Forest, XGBoost, LightGBM, and an Ensemble Model, focusing on model performance and generalization capability.
+- **Model Development:** The project progressed from a baseline model to more sophisticated models like Linear Regression, Random Forest, XGBoost, LightGBM, and an Ensemble Model, focusing on model performance and generalization capability.
 - **Model Performance:** The Ensemble Model outperformed others, showcasing strong predictive accuracy and generalization, evidenced by lower mean absolute error (MAE) in cross-validation.
 
 ![스크린샷 2023-11-12 오후 11 58 40](https://github.com/hyunstar11/Portfolio/assets/90128775/b74de6d6-297d-4114-8a1f-671854fa879e)
@@ -55,4 +55,4 @@ The project provides valuable insights into the sneaker resale market, identifyi
 - Deployment of the predictive model for real-time price forecasting.
 - Exploration of other limited edition items to generalize the model's applicability.
 
-This study not only advances the understanding of the sneaker resale market but also opens avenues for applying similar methodologies to other markets, enhancing the predictive capabilities of economic models in various domains.
+This project not only advances the understanding of the sneaker resale market but also opens avenues for applying similar methodologies to other markets, enhancing the predictive capabilities of economic models in various domains.
